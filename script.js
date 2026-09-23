@@ -1,37 +1,35 @@
-// Café Aroma Del Valle — interacciones generales
+// Café Aroma Del Valle — interacciones base (sin dependencias)
 (function(){
-  var burger = document.getElementById('burger');
-  var mobileNav = document.getElementById('mobileNav');
-  if(burger && mobileNav){
-    burger.addEventListener('click', function(){
-      var open = mobileNav.classList.toggle('open');
-      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  var toggle = document.getElementById('navToggle');
+  var mobile = document.getElementById('mobileNav');
+  if(toggle && mobile){
+    toggle.addEventListener('click', function(){
+      var open = mobile.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    mobileNav.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){ mobileNav.classList.remove('open'); });
+    mobile.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ mobile.classList.remove('open'); });
     });
   }
-  // Tabs del menú
-  var tabs = document.querySelectorAll('.tab');
-  tabs.forEach(function(tab){
-    tab.addEventListener('click', function(){
-      tabs.forEach(function(t){ t.classList.remove('active'); });
-      tab.classList.add('active');
-      var name = tab.getAttribute('data-tab');
-      document.querySelectorAll('.menu-panel').forEach(function(p){
-        p.classList.toggle('active', p.id === 'panel-' + name);
+  // Resaltado suave de sección activa
+  var links = document.querySelectorAll('.main-nav a[href^="#"]');
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  if('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting && map[e.target.id]){
+          links.forEach(function(l){ l.style.color=''; });
+          map[e.target.id].style.color = '#a8842f';
+        }
       });
+    },{rootMargin:'-40% 0px -55% 0px'});
+    Object.keys(map).forEach(function(id){
+      var s = document.getElementById(id);
+      if(s) obs.observe(s);
     });
-  });
-  // Año dinámico
-  var y = document.getElementById('year');
-  if(y){ y.textContent = new Date().getFullYear(); }
-  // Sombra del header al hacer scroll
-  var header = document.querySelector('.header');
-  function onScroll(){
-    if(!header) return;
-    header.style.boxShadow = window.scrollY > 10 ? '0 10px 30px rgba(0,0,0,.4)' : 'none';
   }
-  window.addEventListener('scroll', onScroll, {passive:true});
-  onScroll();
+  // Año dinámico si existe
+  var y = document.getElementById('year');
+  if(y) y.textContent = new Date().getFullYear();
 })();
