@@ -1,35 +1,52 @@
-// Café Aroma Del Valle — interacciones base (sin dependencias)
-(function(){
+// Café Aroma Del Valle — interacciones del sitio (sin sistema propio de usuarios/comentarios).
+(function () {
   var toggle = document.getElementById('navToggle');
-  var mobile = document.getElementById('mobileNav');
-  if(toggle && mobile){
-    toggle.addEventListener('click', function(){
-      var open = mobile.classList.toggle('open');
+  var menu = document.getElementById('navMenu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      var open = menu.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    mobile.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){ mobile.classList.remove('open'); });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { menu.classList.remove('open'); });
     });
   }
-  // Resaltado suave de sección activa
-  var links = document.querySelectorAll('.main-nav a[href^="#"]');
-  var map = {};
-  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
-  if('IntersectionObserver' in window){
-    var obs = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(e.isIntersecting && map[e.target.id]){
-          links.forEach(function(l){ l.style.color=''; });
-          map[e.target.id].style.color = '#a8842f';
-        }
+
+  // Galería con lightbox
+  var box = document.getElementById('lightbox');
+  var boxImg = document.getElementById('lightboxImg');
+  var closeBtn = document.getElementById('lightboxClose');
+  function closeBox() { if (box) box.hidden = true; }
+  document.querySelectorAll('#gallery .g-item').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var src = btn.getAttribute('data-full');
+      var img = btn.querySelector('img');
+      if (box && boxImg && src) {
+        boxImg.src = src;
+        boxImg.alt = img ? img.alt : 'Imagen ampliada';
+        box.hidden = false;
+      }
+    });
+  });
+  if (closeBtn) closeBtn.addEventListener('click', closeBox);
+  if (box) box.addEventListener('click', function (e) { if (e.target === box) closeBox(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeBox(); });
+
+  // Filtros del catálogo inicial (solo presentación, no toca el runtime ITM)
+  var filterBtns = document.querySelectorAll('[data-filter]');
+  var cards = document.querySelectorAll('[data-cat]');
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filterBtns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function (c) {
+        c.style.display = (f === 'todos' || c.getAttribute('data-cat') === f) ? '' : 'none';
       });
-    },{rootMargin:'-40% 0px -55% 0px'});
-    Object.keys(map).forEach(function(id){
-      var s = document.getElementById(id);
-      if(s) obs.observe(s);
     });
-  }
+  });
+
   // Año dinámico si existe
   var y = document.getElementById('year');
-  if(y) y.textContent = new Date().getFullYear();
+  if (y) y.textContent = String(new Date().getFullYear());
 })();
