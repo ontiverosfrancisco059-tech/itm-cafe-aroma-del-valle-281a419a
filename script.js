@@ -1,59 +1,63 @@
-// Café Aroma Del Valle — interacciones del sitio (sin sistema propio de login/comentarios).
-(function () {
-  "use strict";
-
-  // Menú móvil
-  var toggle = document.getElementById("navToggle");
-  var list = document.getElementById("navList");
-  if (toggle && list) {
-    toggle.addEventListener("click", function () {
-      var open = list.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+// Café Aroma Del Valle — interacciones generales (no gestiona comentarios: eso lo hace comments.js)
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    list.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") {
-        list.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-      }
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ nav.classList.remove('open'); });
     });
   }
 
-  // Resaltado de sección activa
-  var links = Array.prototype.slice.call(document.querySelectorAll('.main-nav a[href^="#"]'));
-  var sections = links
-    .map(function (a) { return document.querySelector(a.getAttribute("href")); })
-    .filter(Boolean);
-  if ("IntersectionObserver" in window && sections.length) {
-    var obs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) {
-          links.forEach(function (a) {
-            a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id);
-          });
-        }
+  var y = document.getElementById('year');
+  if(y) y.textContent = new Date().getFullYear();
+
+  // Filtro de menú
+  var filters = document.querySelectorAll('.filter');
+  var cards = document.querySelectorAll('#menuGrid .menu-card');
+  filters.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filters.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function(c){
+        var show = (f === 'all' || c.getAttribute('data-cat') === f);
+        c.style.display = show ? '' : 'none';
       });
-    }, { rootMargin: "-40% 0px -55% 0px" });
-    sections.forEach(function (s) { obs.observe(s); });
+    });
+  });
+
+  // Reveal on scroll
+  var revealEls = document.querySelectorAll('.menu-card, .gallery-grid figure, .shop-card, .hero-card, .store-banner');
+  revealEls.forEach(function(el){ el.classList.add('reveal'); });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    },{threshold:.12});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('visible'); });
   }
 
-  // Año dinámico si existe marcador
-  var year = document.getElementById("year");
-  if (year) year.textContent = String(new Date().getFullYear());
-
-  // Cantidad en ficha de producto (solo UX, sin pedidos ni pagos)
-  var qty = document.getElementById("qty");
-  var total = document.getElementById("totalLine");
-  var unit = document.getElementById("unitPrice");
-  function money(n) {
-    return "$" + Number(n).toFixed(2) + " MXN";
-  }
-  if (qty && total && unit) {
-    var update = function () {
-      var q = Math.max(1, parseInt(qty.value || "1", 10));
-      qty.value = String(q);
-      total.textContent = "Total estimado: " + money(Number(unit.dataset.price || 189) * q) + " · pago y entrega se confirman en el local.";
-    };
-    qty.addEventListener("input", update);
-    update();
+  // Filtro simple de tienda (solo página /tienda)
+  var shopFilters = document.querySelectorAll('[data-shop-filter]');
+  var shopCards = document.querySelectorAll('[data-shop-cat]');
+  if(shopFilters.length){
+    shopFilters.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        shopFilters.forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        var f = btn.getAttribute('data-shop-filter');
+        shopCards.forEach(function(c){
+          var show = (f === 'all' || c.getAttribute('data-shop-cat') === f);
+          c.style.display = show ? '' : 'none';
+        });
+      });
+    });
   }
 })();
