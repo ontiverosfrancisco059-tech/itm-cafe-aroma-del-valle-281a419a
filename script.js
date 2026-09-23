@@ -1,34 +1,59 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+// Café Aroma Del Valle — interacciones del sitio (sin sistema propio de login/comentarios).
+(function () {
+  "use strict";
 
-const toggle = document.getElementById('navToggle');
-const menu = document.getElementById('navMenu');
-if (toggle && menu) {
-  toggle.addEventListener('click', () => {
-    const open = menu.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
-}
+  // Menú móvil
+  var toggle = document.getElementById("navToggle");
+  var list = document.getElementById("navList");
+  if (toggle && list) {
+    toggle.addEventListener("click", function () {
+      var open = list.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    list.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") {
+        list.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
-// Filtro de menú
-const chips = document.querySelectorAll('.chip');
-const items = document.querySelectorAll('.menu-item');
-chips.forEach(ch => ch.addEventListener('click', () => {
-  chips.forEach(c => c.classList.remove('active'));
-  ch.classList.add('active');
-  const f = ch.dataset.filter;
-  items.forEach(it => {
-    it.style.display = (f === 'all' || it.dataset.cat === f) ? '' : 'none';
-  });
-}));
+  // Resaltado de sección activa
+  var links = Array.prototype.slice.call(document.querySelectorAll('.main-nav a[href^="#"]'));
+  var sections = links
+    .map(function (a) { return document.querySelector(a.getAttribute("href")); })
+    .filter(Boolean);
+  if ("IntersectionObserver" in window && sections.length) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          links.forEach(function (a) {
+            a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id);
+          });
+        }
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    sections.forEach(function (s) { obs.observe(s); });
+  }
 
-// Lightbox galería
-const lb = document.getElementById('lightbox');
-const lbImg = document.getElementById('lightboxImg');
-const lbClose = document.getElementById('lightboxClose');
-document.querySelectorAll('.g-item').forEach(b => b.addEventListener('click', () => {
-  lbImg.src = b.dataset.full;
-  lb.hidden = false;
-}));
-if (lbClose) lbClose.addEventListener('click', () => { lb.hidden = true; lbImg.src=''; });
-if (lb) lb.addEventListener('click', e => { if (e.target === lb) { lb.hidden = true; lbImg.src=''; } });
+  // Año dinámico si existe marcador
+  var year = document.getElementById("year");
+  if (year) year.textContent = String(new Date().getFullYear());
+
+  // Cantidad en ficha de producto (solo UX, sin pedidos ni pagos)
+  var qty = document.getElementById("qty");
+  var total = document.getElementById("totalLine");
+  var unit = document.getElementById("unitPrice");
+  function money(n) {
+    return "$" + Number(n).toFixed(2) + " MXN";
+  }
+  if (qty && total && unit) {
+    var update = function () {
+      var q = Math.max(1, parseInt(qty.value || "1", 10));
+      qty.value = String(q);
+      total.textContent = "Total estimado: " + money(Number(unit.dataset.price || 189) * q) + " · pago y entrega se confirman en el local.";
+    };
+    qty.addEventListener("input", update);
+    update();
+  }
+})();
