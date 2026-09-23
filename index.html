@@ -1,302 +1,305 @@
-<!doctype html>
-<html lang="es-MX"><head>
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Café Aroma Del Valle — Cafetería de especialidad en Campeche</title>
-<meta name="description" content="Café Aroma Del Valle: cafetería de especialidad en Campeche. Calidad, precios justos y descuentos para clientes del local. Espresso, filtrados, panadería artesanal y tienda en línea.">
+<meta name="description" content="Café Aroma Del Valle, cafetería de especialidad en Campeche. Espresso, capuchino, cold brew, grano premium y repostería. Calidad, precios justos y beneficios para clientes del local.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>.itm-profile,.itm-comments{display:grid;gap:14px;max-width:760px;margin:0 auto}.itm-profile{margin-bottom:18px}.itm-profile__card{border:1px solid rgba(127,127,127,.22);border-radius:14px;padding:12px 16px;background:rgba(127,127,127,.05)}.itm-profile__summary{cursor:pointer;font-weight:700}.itm-profile__body{display:grid;gap:10px;padding-top:12px}.itm-profile__private{opacity:.68;font-size:.86em}.itm-profile__actions,.itm-comments__actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.itm-comments__head{display:grid;gap:8px}.itm-comments__list{display:grid;gap:12px}.itm-comments__item{padding:16px;border:1px solid rgba(127,127,127,.2);border-radius:16px;background:rgba(127,127,127,.06)}.itm-comments__author{font-weight:700}.itm-comments__date{opacity:.65;font-size:.82em}.itm-comments__body{margin-top:8px;white-space:pre-wrap}.itm-comments__form{display:grid;gap:10px}.itm-comments__form input,.itm-comments__form textarea{width:100%;box-sizing:border-box;padding:11px;border:1px solid rgba(127,127,127,.35);border-radius:10px;background:transparent;color:inherit;font:inherit}.itm-comments__form textarea{min-height:100px;resize:vertical}.itm-comments__button{border:0;border-radius:999px;padding:10px 16px;cursor:pointer;background:#1f7a55;color:#fff;font:inherit}.itm-comments__edit{border:0;background:transparent;cursor:pointer;font-size:1rem;padding:2px 6px}.itm-comments__stars{display:flex;gap:2px;align-items:center;flex-wrap:wrap}.itm-comments__star{border:0;background:transparent;color:inherit;cursor:pointer;font-size:1.7rem;line-height:1;padding:2px 3px;opacity:.45}.itm-comments__star.is-active,.itm-comments__star:hover,.itm-comments__star:focus{opacity:1;color:#f5a400}.itm-comments__muted{opacity:.7}.itm-comments__status{min-height:1.3em}.itm-comments__error{color:#b42318}.itm-comments{--itm-accent:#7c3aed;--itm-accent-2:#ec4899;--itm-ink:#171321;--itm-muted:#6f687b;max-width:820px;margin:32px auto;padding:24px;border:1px solid color-mix(in srgb,var(--itm-accent) 16%,transparent);border-radius:28px;background:linear-gradient(145deg,color-mix(in srgb,var(--itm-accent) 8%,transparent),color-mix(in srgb,var(--itm-accent-2) 5%,transparent));box-shadow:0 18px 55px rgba(31,18,54,.12);color:var(--itm-ink)}.itm-comments__head h2{margin:0;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.03em}.itm-comments__head p{margin:0;line-height:1.55;color:var(--itm-muted)}.itm-comments__rating{display:grid;grid-template-columns:minmax(180px,.7fr) 1fr;gap:18px;align-items:center;padding:18px;border-radius:20px;background:rgba(255,255,255,.72);border:1px solid rgba(124,58,237,.12)}.itm-comments__rating-summary{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.itm-comments__rating-summary strong{font-size:2.2rem;letter-spacing:-.06em}.itm-comments__rating-summary span{color:#f59e0b;letter-spacing:2px}.itm-comments__rating-summary small{width:100%;color:var(--itm-muted)}.itm-comments__stars{display:flex;gap:4px;align-items:center}.itm-comments__star{width:40px;height:40px;border-radius:12px!important;color:#c7bfce!important;background:rgba(124,58,237,.06)!important;transition:transform .16s ease,background .16s ease,color .16s ease,box-shadow .16s ease}.itm-comments__star:hover,.itm-comments__star:focus-visible{transform:translateY(-2px);color:#f59e0b!important;background:#fff!important;box-shadow:0 6px 18px rgba(245,158,11,.2)}.itm-comments__star.is-active{color:#f59e0b!important;background:linear-gradient(135deg,#fff7ed,#fef3c7)!important;box-shadow:inset 0 0 0 1px rgba(245,158,11,.28)}.itm-comments__item{padding:18px 20px!important;border:1px solid rgba(124,58,237,.12)!important;border-radius:20px!important;background:rgba(255,255,255,.76)!important;box-shadow:0 8px 24px rgba(31,18,54,.06)}.itm-comments__author{font-size:.98rem}.itm-comments__date{margin-left:6px;color:var(--itm-muted)}.itm-comments__body{line-height:1.65;color:#3c3547}.itm-comments__form{padding:18px;border-radius:20px;background:rgba(255,255,255,.7);border:1px solid rgba(124,58,237,.12)}.itm-comments__form input,.itm-comments__form textarea{border-color:rgba(124,58,237,.2)!important;background:#fff!important;color:var(--itm-ink)!important}.itm-comments__form input:focus,.itm-comments__form textarea:focus{outline:3px solid rgba(124,58,237,.13);border-color:var(--itm-accent)!important}.itm-comments__button{background:linear-gradient(135deg,var(--itm-accent),var(--itm-accent-2));box-shadow:0 8px 18px rgba(124,58,237,.22);transition:transform .16s ease,box-shadow .16s ease}.itm-comments__button:hover,.itm-comments__button:focus-visible{transform:translateY(-2px);box-shadow:0 12px 24px rgba(124,58,237,.3)}.itm-profile__card{border:1px solid rgba(124,58,237,.14)!important;border-radius:20px!important;background:rgba(255,255,255,.72)!important}.itm-profile__summary{padding:2px}.itm-comments__muted,.itm-profile__private{color:var(--itm-muted)}@media(max-width:640px){.itm-comments{margin:20px 12px;padding:16px;border-radius:22px}.itm-comments__rating{grid-template-columns:1fr}.itm-comments__star{width:36px;height:36px}.itm-comments__actions{align-items:flex-start}}</style><script src="https://www.gstatic.com/firebasejs/12.18.0/firebase-app-compat.js" data-loaded="true"></script><script src="https://www.gstatic.com/firebasejs/12.18.0/firebase-auth-compat.js" data-loaded="true"></script><script src="https://itm-void-excepcional.pages.dev/firebase-config.js" data-loaded="true"></script><script src="https://itm-void-excepcional.pages.dev/firebase-client.js" data-loaded="true"></script></head>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%231a120b'/%3E%3Cpath d='M10 12h10v6a5 5 0 0 1-5 5h-5z' fill='none' stroke='%23c9a86a' stroke-width='2'/%3E%3Cpath d='M20 13h2a3 3 0 0 1 0 6h-2' fill='none' stroke='%23c9a86a' stroke-width='2'/%3E%3C/svg%3E">
+</head>
 <body>
 <a class="skip" href="#contenido" data-eb-editable="link" data-eb-key="index.a.1" data-eb-role="a" data-eb-kind="link">Saltar al contenido</a>
 
-<header class="site-header" id="topo">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="Café Aroma Del Valle inicio" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">
-      <span class="brand-mark" aria-hidden="true">AV</span>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Café Aroma Del Valle inicio" data-eb-editable="link" data-eb-key="index.a.2" data-eb-role="a" data-eb-kind="link">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="32" height="32"><circle cx="16" cy="16" r="15" fill="#1a120b" stroke="#c9a86a" stroke-width="1.5"/><path d="M10 12h10v6a5 5 0 0 1-5 5h-5z" fill="none" stroke="#c9a86a" stroke-width="2"/><path d="M20 13h2a3 3 0 0 1 0 6h-2" fill="none" stroke="#c9a86a" stroke-width="2"/><path d="M12 9c0-1 1-1 1-2M16 9c0-1 1-1 1-2" stroke="#c9a86a" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></span>
       <span class="brand-text"><strong>Café Aroma Del Valle</strong><small>Cafetería de especialidad · Campeche</small></span>
     </a>
-    <nav class="main-nav" aria-label="Navegación principal">
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" data-eb-editable="link" data-eb-key="index.button.3" data-eb-role="button" data-eb-kind="link">Menú</button>
-      <ul id="navList">
-        <li><a href="#nosotrosLLL" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
-        <li><a href="#menu" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Menú</a></li>
-        <li><a href="#oficio" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Oficio</a></li>
-        <li><a href="#galeria" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Galería</a></li>
-        <li><a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Opiniones</a></li>
-        <li><a href="#visita" data-eb-editable="link" data-eb-key="index.a.9" data-eb-role="a" data-eb-kind="link">Visita</a></li>
-        <li><a class="btn btn-gold btn-sm" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.10" data-eb-role="a" data-eb-kind="link">Tienda en línea</a></li>
-      </ul>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#nosotros" data-eb-editable="link" data-eb-key="index.a.3" data-eb-role="a" data-eb-kind="link">Nosotros</a>
+      <a href="#menu" data-eb-editable="link" data-eb-key="index.a.4" data-eb-role="a" data-eb-kind="link">Menú</a>
+      <a href="#galeria" data-eb-editable="link" data-eb-key="index.a.5" data-eb-role="a" data-eb-kind="link">Galería</a>
+      <a href="#visitanos" data-eb-editable="link" data-eb-key="index.a.6" data-eb-role="a" data-eb-kind="link">Visítanos</a>
+      <a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.7" data-eb-role="a" data-eb-kind="link">Opiniones</a>
+      <a href="/tienda/" class="btn btn-gold btn-sm" data-eb-editable="link" data-eb-key="index.a.8" data-eb-role="a" data-eb-kind="link">Tienda en línea</a>
     </nav>
-    <div class="header-profile">
-      <div data-itm-profile="" data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f" class="itm-profile" aria-live="polite"><details class="itm-profile__card" open=""><summary class="itm-profile__summary">Perfil para reseñas</summary><div class="itm-profile__body"><form class="itm-comments__form" data-profile-form=""><strong>Completa tu perfil</strong><label>Nombre<input name="display_name" maxlength="120" required="" value="Paginawepoficial 01"></label><label>Telefono (opcional)<input name="phone" type="tel" maxlength="30" value=""></label><div class="itm-profile__actions"><button class="itm-comments__button" type="submit">Guardar perfil</button><span class="itm-profile__private">El telefono no se muestra publicamente.</span></div></form><p class="itm-comments__status" data-profile-status="" aria-live="polite"></p></div></details></div>
+    <div class="header-actions">
+      <a class="phone-chip" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.9" data-eb-role="a" data-eb-kind="link">981 133 2914</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="index.button.10" data-eb-role="button" data-eb-kind="link">☰</button>
     </div>
   </div>
 </header>
 
 <main id="contenido">
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-media" role="img" aria-label="Interior elegante de la cafetería para hero principal"></div>
-    <div class="hero-veil" aria-hidden="true"></div>
-    <div class="wrap hero-content">
-      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Campeche · Desde el corazón del valle</p>
-      <h1 data-eb-editable="text" data-eb-key="index.h1.12" data-eb-role="h1" data-eb-kind="text">El ritual del café,<br><em>servido con calma.</em></h1>
-      <p class="lead" data-eb-editable="text" data-eb-key="index.p.13" data-eb-role="p" data-eb-kind="text">Cafetería de especialidad para clientes del local: grano seleccionado, barra precisa y panadería del día. Calidad constante, precios justos y descuentos por ser cliente.</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" role="img" aria-label="Hero principal cafetería elegante"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.11" data-eb-role="p" data-eb-kind="text">Campeche · Desde el grano hasta tu taza</p>
+      <h1 data-eb-editable="text" data-eb-key="index.h1.12" data-eb-role="h1" data-eb-kind="text">Calidad de especialidad, precio justo y trato de casa.</h1>
+      <p class="lead" data-eb-editable="text" data-eb-key="index.p.13" data-eb-role="p" data-eb-kind="text">Somos <strong>Café Aroma Del Valle</strong>, cafetería de especialidad para clientes del local. Espresso intenso, capuchino cremoso, cold brew refrescante y repostería recién horneada. Y si te enamoras de nuestro grano, te lo llevas a casa desde la tienda.</p>
       <div class="hero-cta">
-        <a class="btn btn-gold" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.14" data-eb-role="a" data-eb-kind="link">Comprar café en línea</a>
-        <a class="btn btn-ghost" href="#menu" data-eb-editable="link" data-eb-key="index.a.15" data-eb-role="a" data-eb-kind="link">Ver menú del local</a>
+        <a href="#menu" class="btn btn-gold" data-eb-editable="link" data-eb-key="index.a.14" data-eb-role="a" data-eb-kind="link">Ver menú de la casa</a>
+        <a href="/tienda/" class="btn btn-outline" data-eb-editable="link" data-eb-key="index.a.15" data-eb-role="a" data-eb-kind="link">Comprar café en grano</a>
       </div>
-      <dl class="hero-meta">
-        <div><dt>Horario</dt><dd>Lun a Vie 7:00 – 21:00 · Sáb 8:00 – 22:00 · Dom 9:00 – 15:00</dd></div>
-        <div><dt>Teléfono</dt><dd><a href="https://tel:+5298113329149999" data-eb-editable="link" data-eb-key="index.a.16" data-eb-role="a" data-eb-kind="link">981 133 2914</a></dd></div>
-        <div><dt>Promesa</dt><dd>Calidad, precios y descuentos por ser clientes</dd></div>
-      </dl>
+      <ul class="hero-meta">
+        <li><strong>Lun–Vie</strong> 7:00–21:00</li>
+        <li><strong>Sáb</strong> 8:00–22:00</li>
+        <li><strong>Dom</strong> 9:00–15:00</li>
+      </ul>
     </div>
-  </section>
-
-  <!-- FRANJA VALOR -->
-  <section class="value-strip">
-    <div class="wrap value-grid">
-      <article><h3 data-eb-editable="text" data-eb-key="index.h3.17" data-eb-role="h3" data-eb-kind="text">Grano de especialidad</h3><p data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">Selección arábica, tueste medio para espresso y filtrados. Trazabilidad por lote.</p></article>
-      <article><h3 data-eb-editable="text" data-eb-key="index.h3.19" data-eb-role="h3" data-eb-kind="text">Hecho en casa</h3><p data-eb-editable="text" data-eb-key="index.p.20" data-eb-role="p" data-eb-kind="text">Panadería artesanal horneada cada mañana: croissants, pan de chocolate y piezas de temporada.</p></article>
-      <article><h3 data-eb-editable="text" data-eb-key="index.h3.21" data-eb-role="h3" data-eb-kind="text">Para clientes del local</h3><p data-eb-editable="text" data-eb-key="index.p.22" data-eb-role="p" data-eb-kind="text">Precios claros y descuentos en barra y tienda para quienes nos visitan cada semana.</p></article>
-    </div>
-  </section>
-
-  <!-- NOSOTROS -->
-  <section class="section" id="nosotros">
-    <div class="wrap two-col">
-      <div>
-        <p class="kicker" data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">Nuestra casa------</p>
-        <h2 data-eb-editable="text" data-eb-key="index.h2.24" data-eb-role="h2" data-eb-kind="text">Un local sobrio, cálido y de barrio en Campeche</h2>
-        <p data-eb-editable="text" data-eb-key="index.p.25" data-eb-role="p" data-eb-kind="text">Café Aroma Del Valle nació para vender en línea sin perder lo esencial: el trato del local. Aquí el barista te conoce por tu nombre, recuerda tu bebida y te avisa cuando llega un lote nuevo.</p>
-        <ul class="check-list">
-          <li>Barra de especialidad con espresso, V60 y Chemex</li>
-          <li>Mesas de madera, luz cálida y espacio para trabajar o conversar</li>
-          <li>Venta de grano, molido y accesorios para llevar a casa</li>
+    <aside class="hero-card" aria-label="Destacados">
+      <div class="hero-card-img">
+        <img src="https://images.pexels.com/photos/13305634/pexels-photo-13305634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Hero principal cafetería elegante" loading="eager" fetchpriority="high" data-eb-editable="image" data-eb-key="index.img.16" data-eb-role="img" data-eb-kind="image">
+      </div>
+      <div class="hero-card-body">
+        <h2 data-eb-editable="text" data-eb-key="index.h2.17" data-eb-role="h2" data-eb-kind="text">Beneficios para clientes del local</h2>
+        <ul>
+          <li>Descuentos por frecuencia en barra</li>
+          <li>Grano fresco tostado para llevar</li>
+          <li>Recomendación de método según tu gusto</li>
         </ul>
-        <a class="btn btn-outline" href="#visita" data-eb-editable="link" data-eb-key="index.a.26" data-eb-role="a" data-eb-kind="link">Cómo llegar</a>
+        <p class="small muted" data-eb-editable="text" data-eb-key="index.p.18" data-eb-role="p" data-eb-kind="text">Calidad, precios y descuentos por ser clientes.</p>
+        <a href="tel:+529811332914" class="btn btn-dark btn-block" data-eb-editable="link" data-eb-key="index.a.19" data-eb-role="a" data-eb-kind="link">Llamar: 981 133 2914</a>
       </div>
-      <figure class="framed">
-        <img src="https://images.pexels.com/photos/29917292/pexels-photo-29917292.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Interior acogedor del local en Campeche" loading="lazy" data-eb-editable="image" data-eb-key="index.img.27" data-eb-role="img" data-eb-kind="image">
-        <figcaption>Interior acogedor del local en Campeche. Foto: Arjun Godara / Pexels.</figcaption>
-      </figure>
-    </div>
-  </section>
+    </aside>
+  </div>
+</section>
 
-  <!-- MENU -->
-  <section class="section section-dark" id="menu">
-    <div class="wrap">
-      <p class="kicker kicker-gold" data-eb-editable="text" data-eb-key="index.p.28" data-eb-role="p" data-eb-kind="text">Menú del local</p>
-      <h2 data-eb-editable="text" data-eb-key="index.h2.29" data-eb-role="h2" data-eb-kind="text">Lo esencial, bien ejecutado</h2>
-      <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.30" data-eb-role="p" data-eb-kind="text">Carta corta de especialidad. Todo disponible para consumo en local y parte disponible en tienda en línea.</p>
-      <div class="menu-grid">
-        <article class="menu-card">
-          <img src="https://images.pexels.com/photos/32228894/pexels-photo-32228894.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Taza de espresso de especialidad vista cenital" loading="lazy" data-eb-editable="image" data-eb-key="index.img.31" data-eb-role="img" data-eb-kind="image">
-          <div class="menu-card-body">
-            <h3 data-eb-editable="text" data-eb-key="index.h3.32" data-eb-role="h3" data-eb-kind="text">Espresso y base leche</h3>
-            <ul>
-              <li><span>Espresso Valle <small>notas cacao y piloncillo</small></span><strong>$45</strong></li>
-              <li><span>Americano <small>doble carga, filtrado largo</small></span><strong>$50</strong></li>
-              <li><span>Capuchino clásico <small>leche cremosa, cacao</small></span><strong>$65</strong></li>
-              <li><span>Latte Aroma <small>firma de la casa, vainilla natural</small></span><strong>$70</strong></li>
-            </ul>
-          </div>
-        </article>
-        <article class="menu-card">
-          <img src="https://images.pexels.com/photos/30543110/pexels-photo-30543110.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Capuchino con postre artesanal en mesa rústica" loading="lazy" data-eb-editable="image" data-eb-key="index.img.33" data-eb-role="img" data-eb-kind="image">
-          <div class="menu-card-body">
-            <h3 data-eb-editable="text" data-eb-key="index.h3.34" data-eb-role="h3" data-eb-kind="text">Filtrados y dulce</h3>
-            <ul>
-              <li><span>V60 de origen <small>rotación de lote semanal</small></span><strong>$75</strong></li>
-              <li><span>Chemex para dos <small>para compartir en mesa</small></span><strong>$120</strong></li>
-              <li><span>Croissant mantequilla <small>hojaldre del día</small></span><strong>$48</strong></li>
-              <li><span>Pastel chocolate rústico <small>con café negro</small></span><strong>$68</strong></li>
-            </ul>
-          </div>
-        </article>
+<!-- CINTA VALOR -->
+<section class="value-strip">
+  <div class="container value-grid">
+    <div><h3 data-eb-editable="text" data-eb-key="index.h3.20" data-eb-role="h3" data-eb-kind="text">Especialidad real</h3><p data-eb-editable="text" data-eb-key="index.p.21" data-eb-role="p" data-eb-kind="text">Molienda al momento y recetas calibradas.</p></div>
+    <div><h3 data-eb-editable="text" data-eb-key="index.h3.22" data-eb-role="h3" data-eb-kind="text">Precio honesto</h3><p data-eb-editable="text" data-eb-key="index.p.23" data-eb-role="p" data-eb-kind="text">Porciones generosas sin sobreprecio.</p></div>
+    <div><h3 data-eb-editable="text" data-eb-key="index.h3.24" data-eb-role="h3" data-eb-kind="text">De aquí</h3><p data-eb-editable="text" data-eb-key="index.p.25" data-eb-role="p" data-eb-kind="text">Atención cercana en Xmejía, Campeche.</p></div>
+    <div><h3 data-eb-editable="text" data-eb-key="index.h3.26" data-eb-role="h3" data-eb-kind="text">Para llevar</h3><p data-eb-editable="text" data-eb-key="index.p.27" data-eb-role="p" data-eb-kind="text">Grano y repostería también en tienda en línea.</p></div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section class="section" id="nosotros">
+  <div class="container two-col">
+    <div class="media-frame">
+      <img src="https://images.pexels.com/photos/2036776/pexels-photo-2036776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Barista preparando café de especialidad" loading="lazy" data-eb-editable="image" data-eb-key="index.img.28" data-eb-role="img" data-eb-kind="image">
+      <figcaption>Barra de especialidad — vertido y arte latte al momento.</figcaption>
+    </div>
+    <div>
+      <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.29" data-eb-role="p" data-eb-kind="text">Nuestra casa</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.30" data-eb-role="h2" data-eb-kind="text">Un lugar sobrio, cálido y cargado de aroma.</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.31" data-eb-role="p" data-eb-kind="text">Aroma Del Valle nació para los vecinos del local: quienes buscan un espresso bien extraído antes del trabajo, una sobremesa larga o un cold brew para la tarde campechana. Trabajamos madera oscura, luz cálida y barra a la vista para que veas cómo se prepara tu taza.</p>
+      <ul class="check-list">
+        <li>Tostado medio para espresso y capuchino equilibrado.</li>
+        <li>Leche texturizada sedosa, nunca hervida.</li>
+        <li>Repostería pensada para maridar con café.</li>
+        <li>Venta de grano para que repitas la experiencia en casa.</li>
+      </ul>
+      <div class="inline-cta">
+        <a href="#visitanos" class="btn btn-dark" data-eb-editable="link" data-eb-key="index.a.32" data-eb-role="a" data-eb-kind="link">Cómo llegar</a>
+        <a href="#opiniones" class="btn btn-link" data-eb-editable="link" data-eb-key="index.a.33" data-eb-role="a" data-eb-kind="link">Lo que dicen nuestros clientes →</a>
       </div>
-      <p class="tiny-note" data-eb-editable="text" data-eb-key="index.p.35" data-eb-role="p" data-eb-kind="text">Precios iniciales de referencia en MXN. Pregunta en barra por el lote de la semana y descuentos para clientes frecuentes.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- OFICIO -->
-  <section class="section" id="oficio">
-    <div class="wrap two-col reverse">
-      <figure class="framed">
-        <img src="https://images.pexels.com/photos/8059268/pexels-photo-8059268.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Barista vertiendo arte latte en barra" loading="lazy" data-eb-editable="image" data-eb-key="index.img.36" data-eb-role="img" data-eb-kind="image">
-        <figcaption>Barista vertiendo arte latte en barra. Foto: Windo Nugroho / Pexels.</figcaption>
-      </figure>
+<!-- MENU -->
+<section class="section section-dark" id="menu">
+  <div class="container">
+    <div class="section-head">
       <div>
-        <p class="kicker" data-eb-editable="text" data-eb-key="index.p.37" data-eb-role="p" data-eb-kind="text">Oficio</p>
-        <h2 data-eb-editable="text" data-eb-key="index.h2.38" data-eb-role="h2" data-eb-kind="text">Precisión en barra, sin prisa</h2>
-        <p data-eb-editable="text" data-eb-key="index.p.39" data-eb-role="p" data-eb-kind="text">Calibramos molienda cada turno, pesamos cada dosis y texturizamos leche al momento. Si pides filtrado, te mostramos el grano, el grosor y el tiempo en taza.</p>
-        <div class="steps">
-          <div><strong>01</strong><h4 data-eb-editable="text" data-eb-key="index.h4.40" data-eb-role="h4" data-eb-kind="text">Dosis pesada</h4><p data-eb-editable="text" data-eb-key="index.p.41" data-eb-role="p" data-eb-kind="text">18 g para espresso, 22 g para filtrados por taza grande.</p></div>
-          <div><strong>02</strong><h4 data-eb-editable="text" data-eb-key="index.h4.42" data-eb-role="h4" data-eb-kind="text">Agua a punto</h4><p data-eb-editable="text" data-eb-key="index.p.43" data-eb-role="p" data-eb-kind="text">92–94 °C, filtrada, para una extracción dulce.</p></div>
-          <div><strong>03</strong><h4 data-eb-editable="text" data-eb-key="index.h4.44" data-eb-role="h4" data-eb-kind="text">Servido inmediato</h4><p data-eb-editable="text" data-eb-key="index.p.45" data-eb-role="p" data-eb-kind="text">Del portafiltro a tu mesa en menos de dos minutos.</p></div>
+        <p class="eyebrow eyebrow-gold" data-eb-editable="text" data-eb-key="index.p.34" data-eb-role="p" data-eb-kind="text">Menú de la casa</p>
+        <h2 data-eb-editable="text" data-eb-key="index.h2.35" data-eb-role="h2" data-eb-kind="text">Lo más pedido en barra</h2>
+        <p class="muted-light" data-eb-editable="text" data-eb-key="index.p.36" data-eb-role="p" data-eb-kind="text">Precios de referencia en local. En tienda en línea encuentras grano y paquetes para llevar.</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filtrar menú">
+        <button class="filter active" data-filter="all" data-eb-editable="link" data-eb-key="index.button.37" data-eb-role="button" data-eb-kind="link">Todo</button>
+        <button class="filter" data-filter="caliente" data-eb-editable="link" data-eb-key="index.button.38" data-eb-role="button" data-eb-kind="link">Calientes</button>
+        <button class="filter" data-filter="frio" data-eb-editable="link" data-eb-key="index.button.39" data-eb-role="button" data-eb-kind="link">Fríos</button>
+        <button class="filter" data-filter="dulce" data-eb-editable="link" data-eb-key="index.button.40" data-eb-role="button" data-eb-kind="link">Para acompañar</button>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <article class="menu-card" data-cat="caliente">
+        <img src="https://images.pexels.com/photos/12039010/pexels-photo-12039010.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Espresso de la casa" loading="lazy" data-eb-editable="image" data-eb-key="index.img.41" data-eb-role="img" data-eb-kind="image">
+        <div class="menu-body">
+          <div class="menu-top"><h3 data-eb-editable="text" data-eb-key="index.h3.42" data-eb-role="h3" data-eb-kind="text">Espresso de la casa</h3><span class="price">$45</span></div>
+          <p data-eb-editable="text" data-eb-key="index.p.43" data-eb-role="p" data-eb-kind="text">Doble extracción, crema densa, notas a cacao y piloncillo. Nuestra base insignia.</p>
+          <span class="tag">Caliente · Intenso</span>
         </div>
-      </div>
+      </article>
+      <article class="menu-card" data-cat="caliente">
+        <img src="https://images.pexels.com/photos/37549121/pexels-photo-37549121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Capuchino con arte latte" loading="lazy" data-eb-editable="image" data-eb-key="index.img.44" data-eb-role="img" data-eb-kind="image">
+        <div class="menu-body">
+          <div class="menu-top"><h3 data-eb-editable="text" data-eb-key="index.h3.45" data-eb-role="h3" data-eb-kind="text">Capuchino Valle</h3><span class="price">$65</span></div>
+          <p data-eb-editable="text" data-eb-key="index.p.46" data-eb-role="p" data-eb-kind="text">Arte latte al momento, leche cremosa y equilibrio perfecto espresso-leche-espuma.</p>
+          <span class="tag">Caliente · Insignia</span>
+        </div>
+      </article>
+      <article class="menu-card" data-cat="frio">
+        <img src="https://images.pexels.com/photos/37486085/pexels-photo-37486085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Cold brew refrescante" loading="lazy" data-eb-editable="image" data-eb-key="index.img.47" data-eb-role="img" data-eb-kind="image">
+        <div class="menu-body">
+          <div class="menu-top"><h3 data-eb-editable="text" data-eb-key="index.h3.48" data-eb-role="h3" data-eb-kind="text">Cold Brew Campeche</h3><span class="price">$70</span></div>
+          <p data-eb-editable="text" data-eb-key="index.p.49" data-eb-role="p" data-eb-kind="text">Infusión en frío 18 horas, servido en vaso alto con hielo. Fresco y achocolatado.</p>
+          <span class="tag">Frío · Tarde</span>
+        </div>
+      </article>
+      <article class="menu-card" data-cat="dulce">
+        <img src="https://images.pexels.com/photos/1084071/pexels-photo-1084071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Repostería para acompañar café" loading="lazy" data-eb-editable="image" data-eb-key="index.img.50" data-eb-role="img" data-eb-kind="image">
+        <div class="menu-body">
+          <div class="menu-top"><h3 data-eb-editable="text" data-eb-key="index.h3.51" data-eb-role="h3" data-eb-kind="text">Rebanada Valle + Capuchino</h3><span class="price">$95</span></div>
+          <p data-eb-editable="text" data-eb-key="index.p.52" data-eb-role="p" data-eb-kind="text">Pastel de chocolate de la casa con capuchino. El maridaje favorito de la sobremesa.</p>
+          <span class="tag">Para acompañar</span>
+        </div>
+      </article>
     </div>
-  </section>
 
-  <!-- GALERIA -->
-  <section class="section section-cream" id="galeria">
-    <div class="wrap">
-      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.46" data-eb-role="p" data-eb-kind="text">Galería</p>
-      <h2 data-eb-editable="text" data-eb-key="index.h2.47" data-eb-role="h2" data-eb-kind="text">La barra, el horno y la sala</h2>
-      <div class="gallery">
-        <figure><img src="https://images.pexels.com/photos/26711777/pexels-photo-26711777.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Métodos de filtrado V60 y chemex en barra" loading="lazy" data-eb-editable="image" data-eb-key="index.img.48" data-eb-role="img" data-eb-kind="image"><figcaption>Métodos V60 y Chemex en barra. Foto: Jonathan Borba / Pexels.</figcaption></figure>
-        <figure><img src="https://images.pexels.com/photos/30853716/pexels-photo-30853716.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Vitrina de panadería y pasteles artesanales" loading="lazy" data-eb-editable="image" data-eb-key="index.img.49" data-eb-role="img" data-eb-kind="image"><figcaption>Panadería artesanal del día. Foto: Manish Jain / Pexels.</figcaption></figure>
-        <figure><img src="https://images.pexels.com/photos/30218902/pexels-photo-30218902.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Equipo barista trabajando en barra de especialidad" loading="lazy" data-eb-editable="image" data-eb-key="index.img.50" data-eb-role="img" data-eb-kind="image"><figcaption>Equipo barista en servicio. Foto: Oktay Köseoğlu / Pexels.</figcaption></figure>
-        <figure><img src="https://images.pexels.com/photos/37033633/pexels-photo-37033633.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Fachada del café de día" loading="lazy" data-eb-editable="image" data-eb-key="index.img.51" data-eb-role="img" data-eb-kind="image"><figcaption>Fachada del café de día. Foto: Semih Başaran / Pexels.</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- TIENDA TEASER -->
-  <section class="section section-dark store-teaser">
-    <div class="wrap two-col">
+    <div class="store-banner">
       <div>
-        <p class="kicker kicker-gold" data-eb-editable="text" data-eb-key="index.p.52" data-eb-role="p" data-eb-kind="text">Tienda en línea</p>
-        <h2 data-eb-editable="text" data-eb-key="index.h2.53" data-eb-role="h2" data-eb-kind="text">Llévate el valle a casa</h2>
-        <p data-eb-editable="text" data-eb-key="index.p.54" data-eb-role="p" data-eb-kind="text">Grano entero, molido para tu método y piezas de cerámica. Compra en línea y recoge en el local o pide entrega en Campeche.</p>
-        <div class="mini-products">
-          <div class="mini"><strong>Café en grano 500 g</strong><span>Desde $189</span></div>
-          <div class="mini"><strong>Molido V60 / Chemex 250 g</strong><span>Desde $119</span></div>
-          <div class="mini"><strong>Taza cerámica Aroma</strong><span>$249</span></div>
-        </div>
-        <a class="btn btn-gold" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.55" data-eb-role="a" data-eb-kind="link">Entrar a la tienda</a>
+        <h3 data-eb-editable="text" data-eb-key="index.h3.53" data-eb-role="h3" data-eb-kind="text">¿Te gustó nuestro grano? Llévalo a casa.</h3>
+        <p data-eb-editable="text" data-eb-key="index.p.54" data-eb-role="p" data-eb-kind="text">Venta de bolsas en grano, molido y paquetes con descuento para clientes.</p>
       </div>
-      <div class="teaser-imgs">
-        <img src="https://images.pexels.com/photos/9329115/pexels-photo-9329115.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Bolsa de café en grano para tienda en línea" loading="lazy" data-eb-editable="image" data-eb-key="index.img.56" data-eb-role="img" data-eb-kind="image">
-        <img src="https://images.pexels.com/photos/4098876/pexels-photo-4098876.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Taza cerámica y accesorios para venta en línea" loading="lazy" data-eb-editable="image" data-eb-key="index.img.57" data-eb-role="img" data-eb-kind="image">
+      <a href="/tienda/" class="btn btn-gold" data-eb-editable="link" data-eb-key="index.a.55" data-eb-role="a" data-eb-kind="link">Ir a la tienda</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="section" id="galeria">
+  <div class="container">
+    <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.56" data-eb-role="p" data-eb-kind="text">El local</p>
+    <h2 data-eb-editable="text" data-eb-key="index.h2.57" data-eb-role="h2" data-eb-kind="text">Así se vive Aroma Del Valle</h2>
+    <p class="section-sub" data-eb-editable="text" data-eb-key="index.p.58" data-eb-role="p" data-eb-kind="text">Madera, luz cálida y barra a la vista. Pasa por tu taza o quédate a trabajar un rato.</p>
+    <div class="gallery-grid">
+      <figure><img src="https://images.pexels.com/photos/15860802/pexels-photo-15860802.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Interior del local en Campeche" loading="lazy" data-eb-editable="image" data-eb-key="index.img.59" data-eb-role="img" data-eb-kind="image"><figcaption>Salón interior</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/32061510/pexels-photo-32061510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Fachada y terraza cafetería" loading="lazy" data-eb-editable="image" data-eb-key="index.img.60" data-eb-role="img" data-eb-kind="image"><figcaption>Fachada y terraza</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/36729755/pexels-photo-36729755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Galería momento café con clientes" loading="lazy" data-eb-editable="image" data-eb-key="index.img.61" data-eb-role="img" data-eb-kind="image"><figcaption>Sobremesa con clientes</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/26711773/pexels-photo-26711773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Galería métodos y granos" loading="lazy" data-eb-editable="image" data-eb-key="index.img.62" data-eb-role="img" data-eb-kind="image"><figcaption>Filtrados y grano</figcaption></figure>
+    </div>
+    <p class="small muted credits" data-eb-editable="text" data-eb-key="index.p.63" data-eb-role="p" data-eb-kind="text">Fotografía: Eric Steinhauer, azzam zicc, Alan Jeeson, freestocks.org, Gül Işık, Vitaly Gariev, Jonathan Borba vía Pexels.</p>
+  </div>
+</section>
+
+<!-- VISITANOS -->
+<section class="section section-cream" id="visitanos">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.64" data-eb-role="p" data-eb-kind="text">Visítanos en Campeche</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.65" data-eb-role="h2" data-eb-kind="text">Estamos en Xmejía</h2>
+      <ul class="info-list">
+        <li><strong>Horario:</strong> Lun a Vie 7:00–21:00, Sáb 8:00–22:00, Dom 9:00–15:00</li>
+        <li><strong>Teléfono:</strong> <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.66" data-eb-role="a" data-eb-kind="link">981 133 2914</a></li>
+        <li><strong>TikTok:</strong> mrbeats</li>
+        <li><strong>Zona:</strong> 24615 Xmejía, Camp.</li>
+      </ul>
+      <div class="inline-cta">
+        <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=24615+Xmej%C3%ADa+Campeche" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="index.a.67" data-eb-role="a" data-eb-kind="link">Abrir en Google Maps</a>
+        <a class="btn btn-outline-dark" href="/tienda/" data-eb-editable="link" data-eb-key="index.a.68" data-eb-role="a" data-eb-kind="link">Ver tienda</a>
+      </div>
+      <div class="hours-card">
+        <h3 data-eb-editable="text" data-eb-key="index.h3.69" data-eb-role="h3" data-eb-kind="text">Para clientes del local</h3>
+        <p data-eb-editable="text" data-eb-key="index.p.70" data-eb-role="p" data-eb-kind="text">Pregunta en barra por precio especial en grano y repostería para llevar. Calidad, precios y descuentos por ser clientes.</p>
       </div>
     </div>
-  </section>
+    <div class="map-wrap">
+      <iframe title="Mapa Café Aroma Del Valle" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1903799236984!2d-89.3778403240613!3d19.230532947101622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f59cae167855d67%3A0x5959cb7fbdfd01d9!2s24615%20Xmej%C3%ADa%2C%20Camp.!5e0!3m2!1ses-419!2smx!4v1788402426427!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+</section>
 
-  <!-- OPINIONES / COMENTARIOS ITM -->
-  <section class="section comments-section" id="opiniones">
-    <div class="wrap comments-layout">
-      <div class="comments-intro">
-        <p class="kicker" data-eb-editable="text" data-eb-key="index.p.58" data-eb-role="p" data-eb-kind="text">Opiniones de la casa</p>
-        <h2 data-eb-editable="text" data-eb-key="index.h2.59" data-eb-role="h2" data-eb-kind="text">Lo que dicen nuestros clientes</h2>
-        <p data-eb-editable="text" data-eb-key="index.p.60" data-eb-role="p" data-eb-kind="text">Tu visita cuenta. En esta sección puedes <strong>iniciar sesión con Google</strong>, <strong>guardar tu nombre</strong> y un <strong>teléfono opcional que siempre permanece privado</strong>.</p>
-        <ol class="how-to">
-          <li><strong>1. Accede</strong> con tu cuenta de Google y completa tu perfil.</li>
-          <li><strong>2. Califica</strong> con estrellas del 1 al 5.</li>
-          <li><strong>3. Publica</strong> tu comentario sobre el café, el servicio o la panadería.</li>
-        </ol>
-        <ul class="privacy-notes">
-          <li>Publicamos únicamente tu <strong>nombre visible</strong>; tu teléfono nunca se muestra.</li>
-          <li>Puedes <strong>editar o eliminar</strong> tus propios comentarios cuando quieras.</li>
-          <li>Puedes <strong>cerrar sesión</strong> en cualquier momento desde tu perfil.</li>
+<!-- OPINIONES / COMENTARIOS ITM -->
+<section class="section section-dark opinions" id="opiniones" data-itm-comments-shell>
+  <div class="container">
+    <div class="opinions-head">
+      <div>
+        <p class="eyebrow eyebrow-gold" data-eb-editable="text" data-eb-key="index.p.71" data-eb-role="p" data-eb-kind="text">Experiencias del Valle</p>
+        <h2 data-eb-editable="text" data-eb-key="index.h2.72" data-eb-role="h2" data-eb-kind="text">Opiniones de quienes ya nos visitaron</h2>
+        <p class="muted-light" data-eb-editable="text" data-eb-key="index.p.73" data-eb-role="p" data-eb-kind="text">Tu opinión nos ayuda a mejorar la barra, el grano y el servicio. Aquí puedes dejar tu calificación con estrellas y contarnos cómo te fue.</p>
+      </div>
+      <div class="opinions-steps">
+        <div><span>1</span><p data-eb-editable="text" data-eb-key="index.p.74" data-eb-role="p" data-eb-kind="text">Inicia sesión con Google</p></div>
+        <div><span>2</span><p data-eb-editable="text" data-eb-key="index.p.75" data-eb-role="p" data-eb-kind="text">Guarda tu nombre</p></div>
+        <div><span>3</span><p data-eb-editable="text" data-eb-key="index.p.76" data-eb-role="p" data-eb-kind="text">Califica y comenta</p></div>
+      </div>
+    </div>
+
+    <div class="opinions-grid">
+      <div class="opinions-info">
+        <h3 data-eb-editable="text" data-eb-key="index.h3.77" data-eb-role="h3" data-eb-kind="text">¿Cómo funciona?</h3>
+        <ul>
+          <li><strong>Inicia sesión con Google</strong> para participar.</li>
+          <li><strong>Guarda tu nombre</strong> de visitante; se muestra públicamente junto a tu comentario.</li>
+          <li><strong>Teléfono opcional y privado:</strong> si lo agregas, solo lo usa el negocio para contactarte. Nunca se muestra públicamente.</li>
+          <li><strong>Califica con estrellas</strong> y publica tu comentario sobre tu visita o tu compra.</li>
+          <li>Puedes <strong>editar o eliminar</strong> tus propios comentarios cuando quieras y <strong>cerrar sesión</strong> al terminar.</li>
         </ul>
-      </div>
-      <div class="comments-widget" data-itm-comments-shell="">
-        <div class="comments-shell-head">
-          <h3 data-eb-editable="text" data-eb-key="index.h3.61" data-eb-role="h3" data-eb-kind="text">Reseñas y comentarios</h3>
-          <p data-eb-editable="text" data-eb-key="index.p.62" data-eb-role="p" data-eb-kind="text">Inicia sesión, deja tu calificación y comparte tu experiencia en Café Aroma Del Valle.</p>
-        </div>
-        <div data-itm-comments="" data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f" class="itm-comments"><div class="itm-comments__head"><h2>Reseñas y comentarios</h2><p class="itm-comments__muted">Califica tu experiencia y comparte tu opinión. Para publicar necesitas iniciar sesión y completar tu perfil.</p></div><div class="itm-comments__rating" data-comments-rating="">
-      <div class="itm-comments__rating-summary">
-        <strong>0.0</strong>
-        <span>★★★★★</span>
-        <small>0 calificaciones</small>
-      </div>
-
-      <div class="itm-comments__actions">
-        <span>Tu calificación</span>
-        <div class="itm-comments__stars" role="group" aria-label="Elegir calificación">
-          
-            <button class="itm-comments__star " type="button" data-rating-value="1" aria-label="1 estrella" aria-pressed="false">
-              ★
-            </button>
-          
-            <button class="itm-comments__star " type="button" data-rating-value="2" aria-label="2 estrellas" aria-pressed="false">
-              ★
-            </button>
-          
-            <button class="itm-comments__star " type="button" data-rating-value="3" aria-label="3 estrellas" aria-pressed="false">
-              ★
-            </button>
-          
-            <button class="itm-comments__star " type="button" data-rating-value="4" aria-label="4 estrellas" aria-pressed="false">
-              ★
-            </button>
-          
-            <button class="itm-comments__star " type="button" data-rating-value="5" aria-label="5 estrellas" aria-pressed="false">
-              ★
-            </button>
-          
+        <p class="small muted-light" data-eb-editable="text" data-eb-key="index.p.78" data-eb-role="p" data-eb-kind="text">Mostramos públicamente solo el nombre del visitante, nunca su teléfono. Los comentarios pueden pasar por moderación antes de publicarse.</p>
+        <div class="profile-box">
+          <h4 data-eb-editable="text" data-eb-key="index.h4.79" data-eb-role="h4" data-eb-kind="text">Tu perfil de visitante</h4>
+          <p class="small muted-light" data-eb-editable="text" data-eb-key="index.p.80" data-eb-role="p" data-eb-kind="text">Aquí aparece tu sesión, tu nombre público y tu teléfono privado cuando inicias sesión.</p>
+          <div data-itm-profile data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div>
         </div>
       </div>
-    </div><div class="itm-comments__list" data-comments-list=""><p class="itm-comments__muted">No hay comentarios todavia. Se el primero en comentar.</p></div><div data-comments-auth=""><p class="itm-comments__muted">Completa tu perfil arriba para poder comentar.</p></div><p class="itm-comments__status" data-comments-status="" aria-live="polite"></p></div>
+      <div class="comments-box">
+        <div data-itm-comments data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- VISITA -->
-  <section class="section section-cream" id="visita">
-    <div class="wrap">
-      <p class="kicker" data-eb-editable="text" data-eb-key="index.p.63" data-eb-role="p" data-eb-kind="text">Visítanos</p>
-      <h2 data-eb-editable="text" data-eb-key="index.h2.64" data-eb-role="h2" data-eb-kind="text">Encuéntranos en Campeche</h2>
-      <div class="visit-grid">
-        <div class="visit-card">
-          <h3 data-eb-editable="text" data-eb-key="index.h3.65" data-eb-role="h3" data-eb-kind="text">Horario y contacto</h3>
-          <p data-eb-editable="text" data-eb-key="index.p.66" data-eb-role="p" data-eb-kind="text"><strong>Lun a Vie</strong> 7:00 – 21:00<br><strong>Sábado</strong> 8:00 – 22:00<br><strong>Domingo</strong> 9:00 – 15:00</p>
-          <p data-eb-editable="text" data-eb-key="index.p.67" data-eb-role="p" data-eb-kind="text">Teléfono: <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.68" data-eb-role="a" data-eb-kind="link">981 133 2914</a><br>Zona: Xmejía, Campeche</p>
-          <div class="visit-cta">
-            <a class="btn btn-outline" href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.69" data-eb-role="a" data-eb-kind="link">Llamar al local</a>
-            <a class="btn btn-gold" href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.70" data-eb-role="a" data-eb-kind="link">Pedir para recoger</a>
-          </div>
-        </div>
-        <div class="visit-map">
-          <iframe title="Mapa de Café Aroma Del Valle en Campeche" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1903799236984!2d-89.3778403240613!3d19.230532947101622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f59cae167855d67%3A0x5959cb7fbdfd01d9!2s24615%20Xmej%C3%ADa%2C%20Camp.!5e0!3m2!1ses-419!2smx!4v1788402426427!5m2!1ses-419!2smx" width="600" height="450" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-      </div>
+<!-- TIENDA PREVIEW -->
+<section class="section" id="tienda-preview">
+  <div class="container two-col">
+    <div class="media-frame">
+      <img src="https://images.pexels.com/photos/33417741/pexels-photo-33417741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bolsa café en grano premium para venta" loading="lazy" data-eb-editable="image" data-eb-key="index.img.81" data-eb-role="img" data-eb-kind="image">
+      <figcaption>Café en grano premium — disponible en tienda.</figcaption>
     </div>
-  </section>
+    <div>
+      <p class="eyebrow" data-eb-editable="text" data-eb-key="index.p.82" data-eb-role="p" data-eb-kind="text">Tienda en línea</p>
+      <h2 data-eb-editable="text" data-eb-key="index.h2.83" data-eb-role="h2" data-eb-kind="text">Llévate el Valle a casa</h2>
+      <p data-eb-editable="text" data-eb-key="index.p.84" data-eb-role="p" data-eb-kind="text">Bolsas en grano, molido medio y paquetes para compartir. Recoge en local o pide por teléfono al <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.85" data-eb-role="a" data-eb-kind="link">981 133 2914</a>.</p>
+      <ul class="check-list">
+        <li>Grano premium 500 g y 1 kg</li>
+        <li>Paquete Casa + repostería</li>
+        <li>Precios especiales para clientes frecuentes</li>
+      </ul>
+      <a href="/tienda/" class="btn btn-gold" data-eb-editable="link" data-eb-key="index.a.86" data-eb-role="a" data-eb-kind="link">Explorar la tienda</a>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-grid">
+  <div class="container footer-grid">
     <div>
-      <p class="foot-brand" data-eb-editable="text" data-eb-key="index.p.71" data-eb-role="p" data-eb-kind="text">Café Aroma Del Valle</p>
-      <p data-eb-editable="text" data-eb-key="index.p.72" data-eb-role="p" data-eb-kind="text">Cafetería de especialidad en Campeche. Calidad, precios justos y descuentos para clientes del local.</p>
+      <strong>Café Aroma Del Valle</strong>
+      <p class="small" data-eb-editable="text" data-eb-key="index.p.87" data-eb-role="p" data-eb-kind="text">Cafetería de especialidad en Campeche. Calidad, precios justos y beneficios para clientes del local.</p>
+      <p class="small" data-eb-editable="text" data-eb-key="index.p.88" data-eb-role="p" data-eb-kind="text">Lun–Vie 7:00–21:00 · Sáb 8:00–22:00 · Dom 9:00–15:00</p>
     </div>
     <div>
-      <p class="foot-title" data-eb-editable="text" data-eb-key="index.p.73" data-eb-role="p" data-eb-kind="text">Explora</p>
-      <ul>
-        <li><a href="#nosotros" data-eb-editable="link" data-eb-key="index.a.74" data-eb-role="a" data-eb-kind="link">Nosotros</a></li>
-        <li><a href="#menu" data-eb-editable="link" data-eb-key="index.a.75" data-eb-role="a" data-eb-kind="link">Menú</a></li>
-        <li><a href="tienda/index.html" data-eb-editable="link" data-eb-key="index.a.76" data-eb-role="a" data-eb-kind="link">Tienda</a></li>
-        <li><a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.77" data-eb-role="a" data-eb-kind="link">Opiniones</a></li>
-      </ul>
+      <strong>Contacto</strong>
+      <p class="small" data-eb-editable="text" data-eb-key="index.p.89" data-eb-role="p" data-eb-kind="text"><a href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.90" data-eb-role="a" data-eb-kind="link">981 133 2914</a><br>24615 Xmejía, Camp.<br>TikTok: mrbeats</p>
     </div>
     <div>
-      <p class="foot-title" data-eb-editable="text" data-eb-key="index.p.78" data-eb-role="p" data-eb-kind="text">Contacto</p>
-      <ul>
-        <li><a href="tel:+529811332914" data-eb-editable="link" data-eb-key="index.a.79" data-eb-role="a" data-eb-kind="link">981 133 2914</a></li>
-        <li>Lun a Vie 7:00 – 21:00 · Sáb 8:00 – 22:00 · Dom 9:00 – 15:00</li>
-        <li>Xmejía, Campeche</li>
-      </ul>
+      <strong>Explora</strong>
+      <p class="small" data-eb-editable="text" data-eb-key="index.p.91" data-eb-role="p" data-eb-kind="text"><a href="#menu" data-eb-editable="link" data-eb-key="index.a.92" data-eb-role="a" data-eb-kind="link">Menú</a> · <a href="/tienda/" data-eb-editable="link" data-eb-key="index.a.93" data-eb-role="a" data-eb-kind="link">Tienda</a> · <a href="/tienda/producto-1.html" data-eb-editable="link" data-eb-key="index.a.94" data-eb-role="a" data-eb-kind="link">Grano premium</a> · <a href="#opiniones" data-eb-editable="link" data-eb-key="index.a.95" data-eb-role="a" data-eb-kind="link">Opiniones</a></p>
     </div>
   </div>
-  <div class="wrap foot-base">
-    <small>© 2026 Café Aroma Del Valle. Fotografías: Pexels (ver créditos en cada imagen).</small>
-    <small><a href="#topo" data-eb-editable="link" data-eb-key="index.a.80" data-eb-role="a" data-eb-kind="link">Volver arriba</a></small>
+  <div class="container footer-base">
+    <small>© <span id="year"></span> Café Aroma Del Valle · Sitio de presentación y tienda</small>
   </div>
 </footer>
 
-<script src="script.js" defer=""></script>
-<script src="https://itm-void-excepcional.pages.dev/comments.js" defer=""></script>
+<script src="script.js" defer></script>
+<script src="https://itm-void-excepcional.pages.dev/comments.js" defer></script>
 
-<section data-itm-store-shell="" data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"><h2>Productos</h2><div data-itm-store-products="" data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div></section>
+<section data-itm-store-shell data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"><h2>Productos</h2><div data-itm-store-products data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div></section>
 
-<script src="https://itm-void-excepcional.pages.dev/store.js" defer=""></script>
-
-</body></html>
+<script src="https://itm-void-excepcional.pages.dev/store.js" defer></script>
+</body>
+</html>
