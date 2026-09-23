@@ -1,38 +1,34 @@
-// Café Aroma Del Valle — interacciones del sitio principal
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var mobile = document.getElementById('mobileNav');
-  if(toggle && mobile){
-    toggle.addEventListener('click', function(){
-      var open = mobile.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    mobile.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){ mobile.classList.remove('open'); });
-    });
-  }
+document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Resaltado de sección activa
-  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
-  var map = {};
-  links.forEach(function(a){ map[a.getAttribute('href')] = a; });
-  if('IntersectionObserver' in window){
-    var obs = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(e.isIntersecting && map['#'+e.target.id]){
-          links.forEach(function(a){ a.style.color=''; });
-          map['#'+e.target.id].style.color = '#fff';
-        }
-      });
-    }, {rootMargin:'-40% 0px -55% 0px'});
-    ['nosotros','menu','local','galeria','opiniones','contacto'].forEach(function(id){
-      var el = document.getElementById(id);
-      if(el) obs.observe(el);
-    });
-  }
-
-  // Año dinámico si se usa en el futuro
-  document.querySelectorAll('[data-year]').forEach(function(el){
-    el.textContent = new Date().getFullYear();
+const toggle = document.getElementById('navToggle');
+const menu = document.getElementById('navMenu');
+if (toggle && menu) {
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-})();
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+}
+
+// Filtro de menú
+const chips = document.querySelectorAll('.chip');
+const items = document.querySelectorAll('.menu-item');
+chips.forEach(ch => ch.addEventListener('click', () => {
+  chips.forEach(c => c.classList.remove('active'));
+  ch.classList.add('active');
+  const f = ch.dataset.filter;
+  items.forEach(it => {
+    it.style.display = (f === 'all' || it.dataset.cat === f) ? '' : 'none';
+  });
+}));
+
+// Lightbox galería
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lightboxImg');
+const lbClose = document.getElementById('lightboxClose');
+document.querySelectorAll('.g-item').forEach(b => b.addEventListener('click', () => {
+  lbImg.src = b.dataset.full;
+  lb.hidden = false;
+}));
+if (lbClose) lbClose.addEventListener('click', () => { lb.hidden = true; lbImg.src=''; });
+if (lb) lb.addEventListener('click', e => { if (e.target === lb) { lb.hidden = true; lbImg.src=''; } });
