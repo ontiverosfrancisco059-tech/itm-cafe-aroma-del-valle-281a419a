@@ -4,132 +4,91 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tienda — Café Aroma Del Valle</title>
-<meta name="description" content="Tienda de Café Aroma Del Valle: café en grano, molido espresso, cold brew y pan dulce para preparar y disfrutar en casa.">
-<link rel="stylesheet" href="../styles.css">
+<meta name="description" content="Tienda de Café Aroma Del Valle: espresso, capuchino, cold brew, café en grano y postres. Recoge en local en Campeche o pide por teléfono.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.1" data-eb-role="a" data-eb-kind="link"><span class="brand-mark">AV</span><span class="brand-text"><strong>Café Aroma Del Valle</strong><small>Tienda en línea · Campeche</small></span></a>
-    <nav class="main-nav" aria-label="Navegación tienda">
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menuPrincipal" data-eb-editable="link" data-eb-key="tienda-index.button.2" data-eb-role="button" data-eb-kind="link">Menú</button>
-      <ul id="menuPrincipal">
-        <li><a href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.3" data-eb-role="a" data-eb-kind="link">Inicio</a></li>
-        <li><a href="../index.html#menu" data-eb-editable="link" data-eb-key="tienda-index.a.4" data-eb-role="a" data-eb-kind="link">Menú</a></li>
-        <li><a href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.5" data-eb-role="a" data-eb-kind="link">Opiniones</a></li>
-        <li><a href="../index.html#visitanos" data-eb-editable="link" data-eb-key="tienda-index.a.6" data-eb-role="a" data-eb-kind="link">Visítanos</a></li>
-      </ul>
-    </nav>
-  </div>
+  <div class="topbar"><p data-eb-editable="text" data-eb-key="tienda-index.p.1" data-eb-role="p" data-eb-kind="text">Lun–Vie 7:00–21:00 · Sáb 8:00–22:00 · Dom 9:00–15:00 — Tel. <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.2" data-eb-role="a" data-eb-kind="link">981 133 2914</a></p></div>
+  <nav class="nav container" aria-label="Navegación principal">
+    <a class="brand" href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.3" data-eb-role="a" data-eb-kind="link"><span class="brand-mark">AV</span><span class="brand-text"><strong>Café Aroma Del Valle</strong><small>Tienda · Campeche</small></span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" data-eb-editable="link" data-eb-key="tienda-index.button.4" data-eb-role="button" data-eb-kind="link">Menú</button>
+    <div class="nav-menu" id="navMenu">
+      <a href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.5" data-eb-role="a" data-eb-kind="link">Inicio</a>
+      <a href="../index.html#menu" data-eb-editable="link" data-eb-key="tienda-index.a.6" data-eb-role="a" data-eb-kind="link">Carta</a>
+      <a href="../index.html#visitanos" data-eb-editable="link" data-eb-key="tienda-index.a.7" data-eb-role="a" data-eb-kind="link">Visítanos</a>
+      <a href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.8" data-eb-role="a" data-eb-kind="link">Opiniones</a>
+      <a class="btn btn-gold" href="index.html" data-eb-editable="link" data-eb-key="tienda-index.a.9" data-eb-role="a" data-eb-kind="link">Tienda</a>
+    </div>
+    <div class="nav-profile" data-itm-profile data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div>
+  </nav>
 </header>
 
+<main>
 <section class="store-hero">
   <div class="container">
-    <p class="eyebrow" data-eb-editable="text" data-eb-key="tienda-index.p.7" data-eb-role="p" data-eb-kind="text">Tienda en línea</p>
-    <h1 style="font-family:var(--font-serif);font-size:clamp(32px,4vw,50px);margin:8px 0;" data-eb-editable="text" data-eb-key="tienda-index.h1.8" data-eb-role="h1" data-eb-kind="text">Café del local, directo a tu casa</h1>
-    <p class="lead" data-eb-editable="text" data-eb-key="tienda-index.p.9" data-eb-role="p" data-eb-kind="text">Grano seleccionado y tostado reciente. Elige tu presentación favorita y recoge en local o pide informes por teléfono.</p>
-    <p class="muted" style="color:#cbbfa8;" data-eb-editable="text" data-eb-key="tienda-index.p.10" data-eb-role="p" data-eb-kind="text">Precios iniciales publicados. El catálogo se mantiene actualizado automáticamente.</p>
+    <p class="eyebrow eyebrow-light" data-eb-editable="text" data-eb-key="tienda-index.p.10" data-eb-role="p" data-eb-kind="text">Tienda en línea · Recoge en local</p>
+    <h1 data-eb-editable="text" data-eb-key="tienda-index.h1.11" data-eb-role="h1" data-eb-kind="text">Café, bebidas y antojos del Valle</h1>
+    <p class="lead" data-eb-editable="text" data-eb-key="tienda-index.p.12" data-eb-role="p" data-eb-kind="text">Precios iniciales para clientes del local. El inventario vigente se carga automáticamente abajo. Para pedidos llama al <a href="tel:+529811332914" style="color:var(--gold)" data-eb-editable="link" data-eb-key="tienda-index.a.13" data-eb-role="a" data-eb-kind="link">981 133 2914</a>.</p>
   </div>
 </section>
 
-<main class="container">
-  <div class="filters" role="group" aria-label="Filtrar por categoría">
-    <button class="active" data-filter="todos" data-eb-editable="link" data-eb-key="tienda-index.button.11" data-eb-role="button" data-eb-kind="link">Todos</button>
-    <button data-filter="grano" data-eb-editable="link" data-eb-key="tienda-index.button.12" data-eb-role="button" data-eb-kind="link">En grano</button>
-    <button data-filter="molido" data-eb-editable="link" data-eb-key="tienda-index.button.13" data-eb-role="button" data-eb-kind="link">Molido</button>
-    <button data-filter="frio" data-eb-editable="link" data-eb-key="tienda-index.button.14" data-eb-role="button" data-eb-kind="link">Para cold brew</button>
-    <button data-filter="acompanar" data-eb-editable="link" data-eb-key="tienda-index.button.15" data-eb-role="button" data-eb-kind="link">Para acompañar</button>
+<section class="section container">
+  <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.14" data-eb-role="h2" data-eb-kind="text">Disponibilidad actual</h2>
+  <p style="color:var(--muted)" data-eb-editable="text" data-eb-key="tienda-index.p.15" data-eb-role="p" data-eb-kind="text">Este panel muestra los productos activos del negocio en tiempo real.</p>
+  <div class="runtime-box">
+    <div data-itm-store-products data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div>
   </div>
 
-  <!-- Contenedor gestionado por el runtime ITM: carga productos activos desde la API -->
-  <div data-itm-store-products data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f">
-    <!-- Catálogo inicial relacionado con el negocio (editable posteriormente) -->
-    <div class="grid-products" id="catalogoInicial">
-      <article class="store-card" data-category="grano">
-        <img src="https://images.pexels.com/photos/28411627/pexels-photo-28411627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bolsa de café en grano premium para tienda" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.16" data-eb-role="img" data-eb-kind="image">
-        <div class="body">
-          <span class="badge">En grano</span>
-          <h3 data-eb-editable="text" data-eb-key="tienda-index.h3.17" data-eb-role="h3" data-eb-kind="text">Café en Grano Premium · 500 g</h3>
-          <p data-eb-editable="text" data-eb-key="tienda-index.p.18" data-eb-role="p" data-eb-kind="text">Tueste medio, notas de cacao y panela. Ideal para espresso y métodos filtrados. Tostado de la semana.</p>
-          <p class="price" data-eb-editable="text" data-eb-key="tienda-index.p.19" data-eb-role="p" data-eb-kind="text">$245 MXN</p>
-          <a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.20" data-eb-role="a" data-eb-kind="link">Ver detalle</a>
-        </div>
-      </article>
-      <article class="store-card" data-category="molido">
-        <img src="https://images.pexels.com/photos/17563666/pexels-photo-17563666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Café molido espresso para venta en línea" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.21" data-eb-role="img" data-eb-kind="image">
-        <div class="body">
-          <span class="badge">Molido</span>
-          <h3 data-eb-editable="text" data-eb-key="tienda-index.h3.22" data-eb-role="h3" data-eb-kind="text">Café Molido Espresso · 500 g</h3>
-          <p data-eb-editable="text" data-eb-key="tienda-index.p.23" data-eb-role="p" data-eb-kind="text">Molienda fina calibrada para cafetera espresso. Cuerpo alto y crema persistente.</p>
-          <p class="price" data-eb-editable="text" data-eb-key="tienda-index.p.24" data-eb-role="p" data-eb-kind="text">$235 MXN</p>
-          <a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.25" data-eb-role="a" data-eb-kind="link">Ver detalle</a>
-        </div>
-      </article>
-      <article class="store-card" data-category="frio">
-        <img src="https://images.pexels.com/photos/38719180/pexels-photo-38719180.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Frappé cold brew de la casa" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.26" data-eb-role="img" data-eb-kind="image">
-        <div class="body">
-          <span class="badge">Para cold brew</span>
-          <h3 data-eb-editable="text" data-eb-key="tienda-index.h3.27" data-eb-role="h3" data-eb-kind="text">Mezcla Cold Brew Casa · 500 g</h3>
-          <p data-eb-editable="text" data-eb-key="tienda-index.p.28" data-eb-role="p" data-eb-kind="text">Molienda gruesa lista para infusión en frío de 16 a 18 horas. Refrescante y achocolatada.</p>
-          <p class="price" data-eb-editable="text" data-eb-key="tienda-index.p.29" data-eb-role="p" data-eb-kind="text">$255 MXN</p>
-          <a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.30" data-eb-role="a" data-eb-kind="link">Ver detalle</a>
-        </div>
-      </article>
-      <article class="store-card" data-category="grano">
-        <img src="https://images.pexels.com/photos/19162213/pexels-photo-19162213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Textura granos de café tostado" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.31" data-eb-role="img" data-eb-kind="image">
-        <div class="body">
-          <span class="badge">En grano</span>
-          <h3 data-eb-editable="text" data-eb-key="tienda-index.h3.32" data-eb-role="h3" data-eb-kind="text">Reserva del Valle · 1 kg</h3>
-          <p data-eb-editable="text" data-eb-key="tienda-index.p.33" data-eb-role="p" data-eb-kind="text">Lote de mayor altura, tueste medio-oscuro. Presentación familiar para consumo diario.</p>
-          <p class="price" data-eb-editable="text" data-eb-key="tienda-index.p.34" data-eb-role="p" data-eb-kind="text">$459 MXN</p>
-          <a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.35" data-eb-role="a" data-eb-kind="link">Ver detalle</a>
-        </div>
-      </article>
-      <article class="store-card" data-category="molido">
-        <img src="https://images.pexels.com/photos/37549121/pexels-photo-37549121.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Capuchino insignia con arte latte" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.36" data-eb-role="img" data-eb-kind="image">
-        <div class="body">
-          <span class="badge">Molido</span>
-          <h3 data-eb-editable="text" data-eb-key="tienda-index.h3.37" data-eb-role="h3" data-eb-kind="text">Mezcla Capuchino Insignia · 500 g</h3>
-          <p data-eb-editable="text" data-eb-key="tienda-index.p.38" data-eb-role="p" data-eb-kind="text">La misma mezcla que usamos en barra para nuestro capuchino. Dulzor natural para leche.</p>
-          <p class="price" data-eb-editable="text" data-eb-key="tienda-index.p.39" data-eb-role="p" data-eb-kind="text">$249 MXN</p>
-          <a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.40" data-eb-role="a" data-eb-kind="link">Ver detalle</a>
-        </div>
-      </article>
-      <article class="store-card" data-category="acompanar">
-        <img src="https://images.pexels.com/photos/12664794/pexels-photo-12664794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Postre y pan dulce para acompañar café" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.41" data-eb-role="img" data-eb-kind="image">
-        <div class="body">
-          <span class="badge">Para acompañar</span>
-          <h3 data-eb-editable="text" data-eb-key="tienda-index.h3.42" data-eb-role="h3" data-eb-kind="text">Caja Maridaje Valle · 6 piezas</h3>
-          <p data-eb-editable="text" data-eb-key="tienda-index.p.43" data-eb-role="p" data-eb-kind="text">Selección de pan dulce y repostería del día para acompañar tu café en casa o en oficina.</p>
-          <p class="price" data-eb-editable="text" data-eb-key="tienda-index.p.44" data-eb-role="p" data-eb-kind="text">$189 MXN</p>
-          <a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.45" data-eb-role="a" data-eb-kind="link">Ver detalle</a>
-        </div>
-      </article>
-    </div>
+  <h2 style="margin-top:44px" data-eb-editable="text" data-eb-key="tienda-index.h2.16" data-eb-role="h2" data-eb-kind="text">Catálogo inicial</h2>
+  <p style="color:var(--muted)" data-eb-editable="text" data-eb-key="tienda-index.p.17" data-eb-role="p" data-eb-kind="text">Selección base editable posteriormente. Imágenes y descripciones de referencia del negocio.</p>
+  <div class="store-grid">
+    <article class="product">
+      <img src="https://images.pexels.com/photos/7239437/pexels-photo-7239437.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Espresso Aroma Del Valle servido con chocolate" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.18" data-eb-role="img" data-eb-kind="image">
+      <div class="product-body"><p class="tag" data-eb-editable="text" data-eb-key="tienda-index.p.19" data-eb-role="p" data-eb-kind="text">Especialidad</p><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.20" data-eb-role="h3" data-eb-kind="text">Espresso Aroma Del Valle</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.21" data-eb-role="p" data-eb-kind="text">Doble espresso, tueste medio, notas a cacao. Categoría: Bebidas calientes.</p><p class="price" style="font-family:var(--serif);font-size:1.25rem" data-eb-editable="text" data-eb-key="tienda-index.p.22" data-eb-role="p" data-eb-kind="text">$45 MXN</p><a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.23" data-eb-role="a" data-eb-kind="link">Ver detalle</a></div>
+    </article>
+    <article class="product">
+      <img src="https://images.pexels.com/photos/11385490/pexels-photo-11385490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Capuchino Valle con latte art" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.24" data-eb-role="img" data-eb-kind="image">
+      <div class="product-body"><p class="tag" data-eb-editable="text" data-eb-key="tienda-index.p.25" data-eb-role="p" data-eb-kind="text">Favorito</p><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.26" data-eb-role="h3" data-eb-kind="text">Capuchino Valle 12 oz</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.27" data-eb-role="p" data-eb-kind="text">Leche texturizada y latte art. Categoría: Bebidas calientes.</p><p class="price" style="font-family:var(--serif);font-size:1.25rem" data-eb-editable="text" data-eb-key="tienda-index.p.28" data-eb-role="p" data-eb-kind="text">$65 MXN</p><a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.29" data-eb-role="a" data-eb-kind="link">Ver detalle</a></div>
+    </article>
+    <article class="product">
+      <img src="https://images.pexels.com/photos/37539930/pexels-photo-37539930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bolsa de café en grano 500 g" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.30" data-eb-role="img" data-eb-kind="image">
+      <div class="product-body"><p class="tag" data-eb-editable="text" data-eb-key="tienda-index.p.31" data-eb-role="p" data-eb-kind="text">Para casa</p><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.32" data-eb-role="h3" data-eb-kind="text">Café en grano 500 g</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.33" data-eb-role="p" data-eb-kind="text">Mezcla de la casa, tueste medio. Categoría: Grano.</p><p class="price" style="font-family:var(--serif);font-size:1.25rem" data-eb-editable="text" data-eb-key="tienda-index.p.34" data-eb-role="p" data-eb-kind="text">$220 MXN</p><a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.35" data-eb-role="a" data-eb-kind="link">Ver detalle</a></div>
+    </article>
+    <article class="product">
+      <img src="https://images.pexels.com/photos/4869290/pexels-photo-4869290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Cold brew servido con hielo" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.36" data-eb-role="img" data-eb-kind="image">
+      <div class="product-body"><p class="tag" data-eb-editable="text" data-eb-key="tienda-index.p.37" data-eb-role="p" data-eb-kind="text">Frío</p><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.38" data-eb-role="h3" data-eb-kind="text">Cold Brew del Valle 16 oz</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.39" data-eb-role="p" data-eb-kind="text">Infusión lenta 18 horas. Categoría: Bebidas frías.</p><p class="price" style="font-family:var(--serif);font-size:1.25rem" data-eb-editable="text" data-eb-key="tienda-index.p.40" data-eb-role="p" data-eb-kind="text">$70 MXN</p><a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.41" data-eb-role="a" data-eb-kind="link">Ver detalle</a></div>
+    </article>
+    <article class="product">
+      <img src="https://images.pexels.com/photos/5531659/pexels-photo-5531659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Rebanada de pastel de café con capuchino" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.42" data-eb-role="img" data-eb-kind="image">
+      <div class="product-body"><p class="tag" data-eb-editable="text" data-eb-key="tienda-index.p.43" data-eb-role="p" data-eb-kind="text">Postre</p><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.44" data-eb-role="h3" data-eb-kind="text">Pastel de café porción</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.45" data-eb-role="p" data-eb-kind="text">Bizcocho de chocolate con crema de café. Categoría: Postres.</p><p class="price" style="font-family:var(--serif);font-size:1.25rem" data-eb-editable="text" data-eb-key="tienda-index.p.46" data-eb-role="p" data-eb-kind="text">$75 MXN</p><a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.47" data-eb-role="a" data-eb-kind="link">Ver detalle</a></div>
+    </article>
+    <article class="product">
+      <img src="https://images.pexels.com/photos/15838685/pexels-photo-15838685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Tazas de café para compartir" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.48" data-eb-role="img" data-eb-kind="image">
+      <div class="product-body"><p class="tag" data-eb-editable="text" data-eb-key="tienda-index.p.49" data-eb-role="p" data-eb-kind="text">Para compartir</p><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.50" data-eb-role="h3" data-eb-kind="text">Dúo Valle para llevar</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.51" data-eb-role="p" data-eb-kind="text">Dos capuchinos 12 oz + dos porciones de pastel. Categoría: Paquetes.</p><p class="price" style="font-family:var(--serif);font-size:1.25rem" data-eb-editable="text" data-eb-key="tienda-index.p.52" data-eb-role="p" data-eb-kind="text">$260 MXN</p><a class="btn btn-dark btn-sm" href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.53" data-eb-role="a" data-eb-kind="link">Ver detalle</a></div>
+    </article>
   </div>
 
-  <div class="notice" style="margin:10px 0 34px;">
-    <strong>Cómo comprar:</strong> elige tu producto, revisa el detalle y confirma por teléfono al <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.46" data-eb-role="a" data-eb-kind="link">981 133 2914</a>. Recoge en 24615 Xmejía, Campeche en horario Lun a Vie 7:00 – 21:00, Sáb 8:00 – 22:00, Dom 9:00 – 15:00.
+  <div class="order-box" style="margin-top:26px">
+    <h3 data-eb-editable="text" data-eb-key="tienda-index.h3.54" data-eb-role="h3" data-eb-kind="text">¿Cómo comprar?</h3>
+    <p data-eb-editable="text" data-eb-key="tienda-index.p.55" data-eb-role="p" data-eb-kind="text">Elige tu producto, anota el nombre y escribe o llama al <a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.56" data-eb-role="a" data-eb-kind="link"><strong>981 133 2914</strong></a> para confirmar y recoger en Xmejía, Campeche. Horario: Lun–Vie 7:00–21:00, Sáb 8:00–22:00, Dom 9:00–15:00.</p>
+    <a class="btn btn-gold" href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.57" data-eb-role="a" data-eb-kind="link">Dejar una opinión</a>
   </div>
-
-  <p style="margin-bottom:40px;" data-eb-editable="text" data-eb-key="tienda-index.p.47" data-eb-role="p" data-eb-kind="text"><a class="link" href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.48" data-eb-role="a" data-eb-kind="link">¿Ya probaste nuestro café? Deja tu opinión con tu cuenta de Google →</a></p>
+</section>
 </main>
 
-<footer class="site-footer">
+<footer class="footer">
   <div class="container footer-grid">
-    <div><p class="brand-footer" data-eb-editable="text" data-eb-key="tienda-index.p.49" data-eb-role="p" data-eb-kind="text">Café Aroma Del Valle</p><p data-eb-editable="text" data-eb-key="tienda-index.p.50" data-eb-role="p" data-eb-kind="text">Tienda: café en grano, molido y selecciones para casa.</p></div>
-    <nav aria-label="Secundaria"><a href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.51" data-eb-role="a" data-eb-kind="link">Inicio</a><a href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.52" data-eb-role="a" data-eb-kind="link">Producto destacado</a></nav>
-    <div><p data-eb-editable="text" data-eb-key="tienda-index.p.53" data-eb-role="p" data-eb-kind="text"><a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.54" data-eb-role="a" data-eb-kind="link">981 133 2914</a></p></div>
+    <div><p class="brand-mini" data-eb-editable="text" data-eb-key="tienda-index.p.58" data-eb-role="p" data-eb-kind="text"><span class="brand-mark">AV</span> Café Aroma Del Valle</p><p data-eb-editable="text" data-eb-key="tienda-index.p.59" data-eb-role="p" data-eb-kind="text"><a href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.60" data-eb-role="a" data-eb-kind="link">Volver al inicio</a></p></div>
+    <div><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.61" data-eb-role="h3" data-eb-kind="text">Contacto</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.62" data-eb-role="p" data-eb-kind="text">Xmejía, 24615 Campeche<br><a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.63" data-eb-role="a" data-eb-kind="link">981 133 2914</a></p></div>
+    <div><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.64" data-eb-role="h3" data-eb-kind="text">Ayuda</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.65" data-eb-role="p" data-eb-kind="text"><a href="producto-1.html" data-eb-editable="link" data-eb-key="tienda-index.a.66" data-eb-role="a" data-eb-kind="link">Producto destacado</a><br><a href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.67" data-eb-role="a" data-eb-kind="link">Opiniones</a></p></div>
   </div>
-  <p class="legal" data-eb-editable="text" data-eb-key="tienda-index.p.55" data-eb-role="p" data-eb-kind="text">© 2026 Café Aroma Del Valle</p>
+  <div class="container footer-base"><p data-eb-editable="text" data-eb-key="tienda-index.p.68" data-eb-role="p" data-eb-kind="text">© 2026 Café Aroma Del Valle</p></div>
 </footer>
 <script src="../script.js" defer></script>
-
-<section id="perfil-usuario" aria-label="Perfil del visitante">
-  <div data-itm-profile data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div>
-</section>
 
 <section id="comentarios" aria-label="Comentarios">
   <div data-itm-comments data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div>
