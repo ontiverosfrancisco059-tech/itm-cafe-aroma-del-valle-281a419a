@@ -1,52 +1,58 @@
-// Café Aroma Del Valle — interacciones del sitio (sin sistema propio de usuarios/comentarios).
-(function () {
+// Café Aroma Del Valle – interacciones generales
+(function(){
   var toggle = document.getElementById('navToggle');
-  var menu = document.getElementById('navMenu');
-  if (toggle && menu) {
-    toggle.addEventListener('click', function () {
+  var menu = document.getElementById('menuPrincipal');
+  if(toggle && menu){
+    toggle.addEventListener('click', function(){
       var open = menu.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    menu.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { menu.classList.remove('open'); });
+    menu.addEventListener('click', function(e){
+      if(e.target.tagName === 'A') menu.classList.remove('open');
     });
   }
 
-  // Galería con lightbox
-  var box = document.getElementById('lightbox');
-  var boxImg = document.getElementById('lightboxImg');
-  var closeBtn = document.getElementById('lightboxClose');
-  function closeBox() { if (box) box.hidden = true; }
-  document.querySelectorAll('#gallery .g-item').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var src = btn.getAttribute('data-full');
-      var img = btn.querySelector('img');
-      if (box && boxImg && src) {
-        boxImg.src = src;
-        boxImg.alt = img ? img.alt : 'Imagen ampliada';
-        box.hidden = false;
-      }
-    });
-  });
-  if (closeBtn) closeBtn.addEventListener('click', closeBox);
-  if (box) box.addEventListener('click', function (e) { if (e.target === box) closeBox(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeBox(); });
+  // Horario dinámico simple
+  var el = document.getElementById('horarioHoy');
+  if(el){
+    try{
+      var d = new Date().getDay(); // 0 dom
+      var txt = 'Lun a Vie 7:00 – 21:00';
+      if(d === 6) txt = 'Hoy Sáb 8:00 – 22:00 · Abierto';
+      else if(d === 0) txt = 'Hoy Dom 9:00 – 15:00 · Abierto';
+      else txt = 'Hoy Lun a Vie 7:00 – 21:00 · Abierto';
+      el.textContent = txt;
+    }catch(e){}
+  }
 
-  // Filtros del catálogo inicial (solo presentación, no toca el runtime ITM)
+  // Filtros tienda (si existen en la página)
   var filterBtns = document.querySelectorAll('[data-filter]');
-  var cards = document.querySelectorAll('[data-cat]');
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      filterBtns.forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      var f = btn.getAttribute('data-filter');
-      cards.forEach(function (c) {
-        c.style.display = (f === 'todos' || c.getAttribute('data-cat') === f) ? '' : 'none';
+  var cards = document.querySelectorAll('[data-category]');
+  if(filterBtns.length){
+    filterBtns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        filterBtns.forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        var f = btn.getAttribute('data-filter');
+        cards.forEach(function(c){
+          var cat = c.getAttribute('data-category');
+          c.style.display = (f === 'todos' || f === cat) ? '' : 'none';
+        });
       });
     });
-  });
+  }
 
-  // Año dinámico si existe
-  var y = document.getElementById('year');
-  if (y) y.textContent = String(new Date().getFullYear());
+  // Cantidad en ficha de producto
+  var qty = document.getElementById('qtyVal');
+  if(qty){
+    var n = 1;
+    document.querySelectorAll('[data-qty]').forEach(function(b){
+      b.addEventListener('click', function(){
+        var op = b.getAttribute('data-qty');
+        if(op === 'plus') n++;
+        if(op === 'minus' && n > 1) n--;
+        qty.textContent = n;
+      });
+    });
+  }
 })();
