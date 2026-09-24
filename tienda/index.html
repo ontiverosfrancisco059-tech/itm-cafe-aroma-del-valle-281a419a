@@ -1,59 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-MX">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tienda | Café Aroma Del Valle</title>
-<meta name="description" content="Tienda Café Aroma Del Valle: grano tostado, bebidas, métodos y acompañamientos. Pide por teléfono o WhatsApp en Campeche.">
-<meta name="theme-color" content="#12100c">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c9a24b'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='34' font-weight='bold' text-anchor='middle' fill='%231a140d'%3EA%3C/text%3E%3C/svg%3E">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda — Café Aroma Del Valle</title>
+<meta name="description" content="Catálogo de Café Aroma Del Valle: grano, molido, kits y cold brew. Recoge en Xmejía, Campeche o pide al 9811332914.">
 <link rel="stylesheet" href="../styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<a class="skip-link" href="#catalogGrid" data-eb-editable="link" data-eb-key="tienda-index.a.1" data-eb-role="a" data-eb-kind="link">Saltar al catálogo</a>
-<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 <header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="../" data-eb-editable="link" data-eb-key="tienda-index.a.2" data-eb-role="a" data-eb-kind="link"><span class="brand-mark">A</span><span class="brand-text"><strong>Café Aroma Del Valle</strong><span>Tienda · Campeche</span></span></a>
-    <nav class="nav" id="mainNav">
-      <a href="../" data-eb-editable="link" data-eb-key="tienda-index.a.3" data-eb-role="a" data-eb-kind="link">Inicio</a>
-      <a href="../#menu" data-eb-editable="link" data-eb-key="tienda-index.a.4" data-eb-role="a" data-eb-kind="link">Menú</a>
-      <a href="../#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.5" data-eb-role="a" data-eb-kind="link">Opiniones</a>
-      <a class="btn btn-small" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.6" data-eb-role="a" data-eb-kind="link">981 133 2914</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="tienda-index.button.7" data-eb-role="button" data-eb-kind="link">☰</button>
+  <div class="wrap topbar-inner">
+    <a class="brand" href="../" data-eb-editable="link" data-eb-key="tienda-index.a.1" data-eb-role="a" data-eb-kind="link"><span class="brand-mark">☕</span><span class="brand-text"><strong>Café Aroma Del Valle</strong><small>Tienda · /tienda</small></span></a>
+    <nav class="nav" id="nav"><a href="../#nosotros" data-eb-editable="link" data-eb-key="tienda-index.a.2" data-eb-role="a" data-eb-kind="link">Nosotros</a><a href="../#visitanos" data-eb-editable="link" data-eb-key="tienda-index.a.3" data-eb-role="a" data-eb-kind="link">Visítanos</a><a href="../#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.4" data-eb-role="a" data-eb-kind="link">Opiniones</a><a href="../" data-eb-editable="link" data-eb-key="tienda-index.a.5" data-eb-role="a" data-eb-kind="link">← Volver</a></nav>
+    <div class="top-actions"><span class="btn btn-ghost">Carrito: <strong data-cart-count>0</strong></span><button class="menu-btn" id="menuBtn" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="tienda-index.button.6" data-eb-role="button" data-eb-kind="link">☰</button></div>
   </div>
 </header>
-<main>
-  <section class="tienda-hero">
-    <div class="wrap">
-      <p class="eyebrow" data-eb-editable="text" data-eb-key="tienda-index.p.8" data-eb-role="p" data-eb-kind="text">Ruta /tienda · Venta en mostrador y por teléfono</p>
-      <h1 data-eb-editable="text" data-eb-key="tienda-index.h1.9" data-eb-role="h1" data-eb-kind="text">Tienda <em style="color:var(--gold2)">Aroma Del Valle</em></h1>
-      <p class="lead" data-eb-editable="text" data-eb-key="tienda-index.p.10" data-eb-role="p" data-eb-kind="text">Elige grano, bebidas para llevar y antojos. Agrega a tu selección y confirma por WhatsApp o al 981 133 2914. Recoge en Xmejía, Campeche · Lun–Vie 7–21, Sáb 8–22, Dom 9–15.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-        <input id="searchInput" placeholder="Buscar: latte, grano, pan…" style="flex:1;min-width:220px;background:#191410;border:1px solid var(--line);border-radius:999px;padding:11px 16px;color:var(--cream)">
-      </div>
-      <div id="filters" class="filters"></div>
-      <div id="catalogGrid" class="store-preview"></div>
-      <div class="cart-bar" id="cartBar">
-        <span id="cartText" style="font-size:14.5px">Tu selección está vacía.</span>
-        <span style="display:flex;gap:8px;flex-shrink:0">
-          <button id="clearBtn" class="btn btn-small btn-ghost" type="button" data-eb-editable="link" data-eb-key="tienda-index.button.11" data-eb-role="button" data-eb-kind="link">Vaciar</button>
-          <a id="orderBtn" class="btn btn-small" href="https://wa.me/529811332914" target="_blank" rel="noopener" data-eb-editable="link" data-eb-key="tienda-index.a.12" data-eb-role="a" data-eb-kind="link">Pedir por WhatsApp</a>
-        </span>
-      </div>
-      <p class="notice" style="margin-top:14px" data-eb-editable="text" data-eb-key="tienda-index.p.13" data-eb-role="p" data-eb-kind="text">Precios en MXN. Catálogo servido desde <code>store-products.json</code>. Esta tienda es catálogo + pedido por teléfono; no incluye panel administrativo.</p>
-      <p style="margin-top:12px" data-eb-editable="text" data-eb-key="tienda-index.p.14" data-eb-role="p" data-eb-kind="text"><a href="../#opiniones" style="color:var(--gold2)" data-eb-editable="link" data-eb-key="tienda-index.a.15" data-eb-role="a" data-eb-kind="link">¿Ya compraste? Déjanos tu opinión con estrellas →</a></p>
+<section class="store-hero"><div class="wrap">
+  <p class="eyebrow eyebrow-light" data-eb-editable="text" data-eb-key="tienda-index.p.7" data-eb-role="p" data-eb-kind="text">Tienda pública · sin panel administrativo</p>
+  <h1 data-eb-editable="text" data-eb-key="tienda-index.h1.8" data-eb-role="h1" data-eb-kind="text">Catálogo para llevarte el Valle a casa.</h1>
+  <p class="sec-sub-light" data-eb-editable="text" data-eb-key="tienda-index.p.9" data-eb-role="p" data-eb-kind="text">Elige grano, molido, kits o cold brew. Catálogo cargado desde <code>store-products.json</code>. Para comprar: agrega al carrito como lista de pedido y confirma por teléfono para recoger en tienda.</p>
+  <div class="filters" id="filters">
+    <button class="chip active" data-f="all" data-eb-editable="link" data-eb-key="tienda-index.button.10" data-eb-role="button" data-eb-kind="link">Todo</button>
+    <button class="chip" data-f="Grano" data-eb-editable="link" data-eb-key="tienda-index.button.11" data-eb-role="button" data-eb-kind="link">Grano</button>
+    <button class="chip" data-f="Molido" data-eb-editable="link" data-eb-key="tienda-index.button.12" data-eb-role="button" data-eb-kind="link">Molido</button>
+    <button class="chip" data-f="Kits" data-eb-editable="link" data-eb-key="tienda-index.button.13" data-eb-role="button" data-eb-kind="link">Kits</button>
+    <button class="chip" data-f="Bebidas" data-eb-editable="link" data-eb-key="tienda-index.button.14" data-eb-role="button" data-eb-kind="link">Bebidas</button>
+    <button class="chip" data-f="Para llevar" data-eb-editable="link" data-eb-key="tienda-index.button.15" data-eb-role="button" data-eb-kind="link">Para llevar</button>
+  </div>
+</div></section>
+<main class="section" id="catalogo"><div class="wrap">
+  <h2 id="count" data-eb-editable="text" data-eb-key="tienda-index.h2.16" data-eb-role="h2" data-eb-kind="text">Cargando catálogo…</h2>
+  <div class="cards-3" id="grid"></div>
+  <section id="info-compra" style="margin-top:34px;display:grid;gap:14px">
+    <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.17" data-eb-role="h2" data-eb-kind="text">Cómo comprar y recoger</h2>
+    <div class="grid-2">
+      <div class="product-card"><div class="product-body"><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.18" data-eb-role="h3" data-eb-kind="text">1. Arma tu pedido</h3><p class="tiny" data-eb-editable="text" data-eb-key="tienda-index.p.19" data-eb-role="p" data-eb-kind="text">Agrega productos al carrito (se guarda en tu navegador como lista). No es pago en línea.</p><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.20" data-eb-role="h3" data-eb-kind="text">2. Confirma por teléfono</h3><p class="tiny" data-eb-editable="text" data-eb-key="tienda-index.p.21" data-eb-role="p" data-eb-kind="text">Llama al <a class="link" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.22" data-eb-role="a" data-eb-kind="link">981 133 2914</a> y dinos tu lista. Te confirmamos disponibilidad y hora.</p><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.23" data-eb-role="h3" data-eb-kind="text">3. Recoge en Campeche</h3><p class="tiny" data-eb-editable="text" data-eb-key="tienda-index.p.24" data-eb-role="p" data-eb-kind="text">24615 Xmejía, Camp. Lun a Vie 7:00-21:00 · Sáb 8:00-22:00 · Dom 9:00-15:00.</p></div></div>
+      <div class="product-card"><div class="product-body"><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.25" data-eb-role="h3" data-eb-kind="text">Tu lista de pedido</h3><div id="cartDetail" class="tiny">Vacía por ahora.</div><div class="btn-row"><button class="btn btn-dark" id="copyOrder" data-eb-editable="link" data-eb-key="tienda-index.button.26" data-eb-role="button" data-eb-kind="link">Copiar pedido</button><button class="btn btn-outline-dark" id="clearCart" data-eb-editable="link" data-eb-key="tienda-index.button.27" data-eb-role="button" data-eb-kind="link">Vaciar</button></div><a class="btn btn-gold" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.28" data-eb-role="a" data-eb-kind="link">Llamar para confirmar</a></div></div>
     </div>
   </section>
-</main>
-<footer>
-  <div class="wrap foot-grid">
-    <div><strong style="color:var(--cream)">Café Aroma Del Valle · Tienda</strong><br>Grano, bebidas y pan artesanal · Campeche</div>
-    <div><a href="../" data-eb-editable="link" data-eb-key="tienda-index.a.16" data-eb-role="a" data-eb-kind="link">Volver al inicio</a><br>© <span id="year">2026</span></div>
-  </div>
-</footer>
-<script src="../script.js"></script>
+  <div class="cart-bar"><span>Carrito: <strong data-cart-count>0</strong> productos · Total aprox: <strong id="cartTotal">$0 MXN</strong></span><a class="btn btn-gold" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.29" data-eb-role="a" data-eb-kind="link">Confirmar por teléfono</a></div>
+</div></main>
+<footer class="footer"><div class="wrap"><p class="tiny center" data-eb-editable="text" data-eb-key="tienda-index.p.30" data-eb-role="p" data-eb-kind="text">© <span id="year">2026</span> Café Aroma Del Valle · <a href="../" data-eb-editable="link" data-eb-key="tienda-index.a.31" data-eb-role="a" data-eb-kind="link">Volver al inicio</a> · Imágenes: Wikimedia Commons (ver inicio).</p></div></footer>
+<script>
+(function(){const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$('#year').textContent=new Date().getFullYear();
+const nav=$('#nav'),mb=$('#menuBtn');mb&&mb.addEventListener('click',()=>nav.classList.toggle('open'));
+const fmt=n=>'$'+Number(n).toFixed(0)+' MXN';
+let catalog=[];let filter='all';
+const get=()=>{try{return JSON.parse(localStorage.getItem('adv_cart')||'{}')}catch{return{}}};
+const set=c=>{localStorage.setItem('adv_cart',JSON.stringify(c));render();};
+function render(){const c=get();const n=Object.values(c).reduce((a,b)=>a+b,0);$$('[data-cart-count]').forEach(e=>e.textContent=n);
+let total=0,lines=[];for(const[id,q]of Object.entries(c)){const p=catalog.find(x=>x.id===id);if(!p)continue;total+=p.price*q;lines.push(`• ${p.name} x${q} — ${fmt(p.price*q)}`);}
+$('#cartTotal').textContent=fmt(total);$('#cartDetail').innerHTML=lines.length?lines.map(l=>`<div>${l}</div>`).join('')+'<div style="margin-top:8px"><strong>Total aprox: '+fmt(total)+'</strong></div>':'Vacía por ahora.';}
+async function load(){const urls=['../store-products.json','/store-products.json','./store-products.json'];for(const u of urls){try{const r=await fetch(u);if(r.ok){const j=await r.json();if(j.products){catalog=j.products;draw();render();return;}}}catch(e){}}$('#count').textContent='No se pudo cargar store-products.json';}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function draw(){const list=catalog.filter(p=>filter==='all'||p.category===filter);$('#count').textContent=list.length+' productos · '+filter;$('#grid').innerHTML=list.map(p=>`<article class="product-card"><img src="${esc(p.image)}" alt="${esc(p.image_alt||p.name)}" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.32" data-eb-role="img" data-eb-kind="image"><div class="product-body"><span class="badge">${esc(p.badge||p.category)}</span><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.33" data-eb-role="h3" data-eb-kind="text">${esc(p.name)}</h3><p class="tiny" data-eb-editable="text" data-eb-key="tienda-index.p.34" data-eb-role="p" data-eb-kind="text">${esc(p.description)}</p><div class="product-foot"><span class="product-price">${fmt(p.price)}</span><small class="tiny">${esc(p.unit||'')}</small></div><button class="btn btn-dark btn-block" data-add="${esc(p.id)}" data-eb-editable="link" data-eb-key="tienda-index.button.35" data-eb-role="button" data-eb-kind="link">Agregar</button></div></article>`).join('');}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(b){const c=get();const id=b.dataset.add;c[id]=(c[id]||0)+1;set(c);b.textContent='¡Agregado ✓';setTimeout(()=>b.textContent='Agregar',1000);}const f=e.target.closest('.chip');if(f){$$('.chip').forEach(x=>x.classList.remove('active'));f.classList.add('active');filter=f.dataset.f;draw();}});
+$('#clearCart').addEventListener('click',()=>set({}));
+$('#copyOrder').addEventListener('click',()=>{const c=get();const lines=['Pedido Café Aroma Del Valle:'];for(const[id,q]of Object.entries(c)){const p=catalog.find(x=>x.id===id);if(p)lines.push('• '+p.name+' x'+q);}const t=lines.join('\n');if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(()=>alert('Pedido copiado. Pégalo por teléfono o WhatsApp al 9811332914.'),()=>alert(t));}else{alert(t);}});
+load();})();
+</script>
 
 <section id="perfil-usuario" aria-label="Perfil del visitante">
   <div data-itm-profile data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f"></div>
