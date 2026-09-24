@@ -1,0 +1,81 @@
+{
+  "store": "Café Aroma Del Valle",
+  "currency": "MXN",
+  "updated": "2026-09-24",
+  "contact_phone": "9811332914",
+  "pickup": "Recoge en tienda en Xmejía, Campeche. Lun a Vie 7:00-21:00, Sáb 8:00-22:00, Dom 9:00-15:00.",
+  "products": [
+    {
+      "id": "grano-casa-500g",
+      "name": "Café en Grano de la Casa — 500 g",
+      "category": "Grano",
+      "price": 240,
+      "unit": "bolsa 500 g",
+      "description": "Tueste medio de especialidad, notas a cacao, piloncillo y frutos rojos. Ideal para espresso y prensa francesa.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Coffeebeans.png",
+      "image_alt": "Granos de café tostado de la casa",
+      "badge": "El favorito",
+      "stock": 24
+    },
+    {
+      "id": "molido-medio-500g",
+      "name": "Café Molido Medio — 500 g",
+      "category": "Molido",
+      "price": 230,
+      "unit": "bolsa 500 g",
+      "description": "Molienda media lista para cafetera de goteo y V60. Aroma intenso, taza balanceada y final dulce.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Coffee_with_cream_and_sugar_%28Unsplash%29.jpg/1920px-Coffee_with_cream_and_sugar_%28Unsplash%29.jpg",
+      "image_alt": "Taza de café de especialidad con crema",
+      "badge": "Para casa",
+      "stock": 30
+    },
+    {
+      "id": "kit-aroma-valle",
+      "name": "Kit Aroma del Valle — Taza + Café 250 g",
+      "category": "Kits",
+      "price": 390,
+      "unit": "kit souvenir",
+      "description": "Taza cerámica de la casa + bolsa de grano 250 g + postal de Campeche. Perfecto para regalo.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Caf%C3%A9_con_pasteles_en_Murcia.jpg/1920px-Caf%C3%A9_con_pasteles_en_Murcia.jpg",
+      "image_alt": "Mesa con café y postre",
+      "badge": "Regalo",
+      "stock": 15
+    },
+    {
+      "id": "cold-brew-casa-1l",
+      "name": "Cold Brew de la Casa — 1 L",
+      "category": "Bebidas",
+      "price": 160,
+      "unit": "botella 1 L",
+      "description": "Extracción en frío por 18 horas. Suave, achocolatado y refrescante. Solo recoge en tienda, bien frío.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Coffee_with_cream_and_sugar_%28Unsplash%29.jpg/1920px-Coffee_with_cream_and_sugar_%28Unsplash%29.jpg",
+      "image_alt": "Bebida de café especial",
+      "badge": "De temporada",
+      "stock": 12
+    },
+    {
+      "id": "grano-reserva-250g",
+      "name": "Grano Reserva del Valle — 250 g",
+      "category": "Grano",
+      "price": 185,
+      "unit": "bolsa 250 g",
+      "description": "Lote pequeño de altura, tueste claro. Notas florales y cítricas para métodos filtrados.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Coffeebeans.png",
+      "image_alt": "Detalle de granos de café reserva",
+      "badge": "Lote limitado",
+      "stock": 18
+    },
+    {
+      "id": "drip-caja-10",
+      "name": "Caja Drip Coffee — 10 sobres",
+      "category": "Para llevar",
+      "price": 280,
+      "unit": "caja 10 sobres",
+      "description": "Café de especialidad en filtros individuales. Solo agrega agua caliente donde estés.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Coffee_shop_in_Iran%2C_Mashhad_City_02.jpg/1920px-Coffee_shop_in_Iran%2C_Mashhad_City_02.jpg",
+      "image_alt": "Interior de cafetería",
+      "badge": "Práctico",
+      "stock": 20
+    }
+  ]
+}
