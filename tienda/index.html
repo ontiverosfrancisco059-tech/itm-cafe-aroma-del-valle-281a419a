@@ -4,130 +4,187 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tienda — Café Aroma Del Valle</title>
-<meta name="description" content="Tienda en línea de Café Aroma Del Valle. Catálogo, carrito y pago con código 01 conectados por el runtime ITM y Neon.">
+<meta name="description" content="Tienda en línea de Café Aroma Del Valle: espresso, capuchino, latte y grano selecto. Carrito, código 01, inventario y Mis pedidos.">
 <link rel="stylesheet" href="../styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="site-header">
-  <div class="container header-inner">
+  <div class="wrap header-inner">
     <a class="brand" href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.1" data-eb-role="a" data-eb-kind="link"><span class="brand-mark">☕</span><span class="brand-text"><strong>Café Aroma Del Valle</strong><small>Tienda · Campeche</small></span></a>
     <nav class="main-nav" id="mainNav" aria-label="Navegación tienda">
       <a href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.2" data-eb-role="a" data-eb-kind="link">Inicio</a>
-      <a href="../index.html#nosotros" data-eb-editable="link" data-eb-key="tienda-index.a.3" data-eb-role="a" data-eb-kind="link">Nosotros</a>
-      <a href="../index.html#visita" data-eb-editable="link" data-eb-key="tienda-index.a.4" data-eb-role="a" data-eb-kind="link">Visita</a>
-      <a href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.5" data-eb-role="a" data-eb-kind="link">Opiniones</a>
+      <a href="../index.html#visita" data-eb-editable="link" data-eb-key="tienda-index.a.3" data-eb-role="a" data-eb-kind="link">Visítanos</a>
+      <a href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.4" data-eb-role="a" data-eb-kind="link">Opiniones</a>
+      <a class="btn btn-small" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.5" data-eb-role="a" data-eb-kind="link">981 133 2914</a>
     </nav>
-    <div class="header-actions">
-      <a class="header-phone" href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.6" data-eb-role="a" data-eb-kind="link">981 133 2914</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" data-eb-editable="link" data-eb-key="tienda-index.button.7" data-eb-role="button" data-eb-kind="link">☰</button>
-    </div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú" data-eb-editable="link" data-eb-key="tienda-index.button.6" data-eb-role="button" data-eb-kind="link">☰</button>
   </div>
 </header>
 
 <section class="store-hero">
-  <div class="container">
-    <p class="eyebrow eyebrow-light" data-eb-editable="text" data-eb-key="tienda-index.p.8" data-eb-role="p" data-eb-kind="text">Tienda en línea · Inventario en vivo</p>
-    <h1 data-eb-editable="text" data-eb-key="tienda-index.h1.9" data-eb-role="h1" data-eb-kind="text">Llévate el Valle a casa.</h1>
-    <p class="lead" style="color:#e9dcc3;max-width:680px" data-eb-editable="text" data-eb-key="tienda-index.p.10" data-eb-role="p" data-eb-kind="text">Elige tu café en grano o molido, agrégalo al carrito y confirma con tu <strong>código de pago 01</strong>. El sistema descuenta inventario automáticamente. Sin apartados por teléfono ni mensajes externos: todo ocurre aquí.</p>
-    <a class="back-link" href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.11" data-eb-role="a" data-eb-kind="link">← Volver a la presentación</a>
+  <div class="wrap">
+    <p class="eyebrow eyebrow-light" data-eb-editable="text" data-eb-key="tienda-index.p.7" data-eb-role="p" data-eb-kind="text">Tienda en línea · Inventario en tiempo real</p>
+    <h1 data-eb-editable="text" data-eb-key="tienda-index.h1.8" data-eb-role="h1" data-eb-kind="text">Pide tus favoritos del valle</h1>
+    <p data-eb-editable="text" data-eb-key="tienda-index.p.9" data-eb-role="p" data-eb-kind="text">Elige productos, arma tu carrito y confirma con <strong>código 01</strong>. Tus pedidos aparecen en <strong>Mis pedidos</strong> asociados a tu proyecto. Sin llamadas ni mensajes: todo ocurre aquí.</p>
+    <p data-eb-editable="text" data-eb-key="tienda-index.p.10" data-eb-role="p" data-eb-kind="text"><a href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.11" data-eb-role="a" data-eb-kind="link">← Volver al inicio</a> · Lun–Vie 7:00–21:00 · Sáb 8:00–22:00 · Dom 9:00–15:00</p>
   </div>
 </section>
 
-<main class="container">
-<!--
-  CATÁLOGO INICIAL SUGERIDO PARA EL WORKER (registrar en Neon, no como JSON público):
-  1) Espresso del Valle — 250g grano — Espresso — $185 — imagen user_asset 0323ac94-9f07-47de-a598-593b2d98a83f
-  2) Espresso del Valle — 1kg grano — Espresso — $620 — misma imagen
-  3) V60 Lote del día — 250g molido medio — Filtrados — $195
-  4) Capuchino Valle kit (café + cacao) — Kits — $240
-  5) Cold Brew 12h botella 500ml — Bebidas frías — $95
-  6) Rol de canela x2 (solo pickup) — Panadería — $70
-  El runtime ITM hidrata [data-itm-product-list] desde Neon usando este diseño.
--->
+<main class="wrap">
+<a class="back-link" href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.12" data-eb-role="a" data-eb-kind="link">← Inicio</a>
+
+<!-- Catálogo inicial para registro del worker en Neon. El runtime ITM hidrata la lista desde Neon; este JSON es solo semilla, no fuente pública de la tienda. -->
+<script type="application/json" data-itm-catalog-seed>
+{
+  "project_id": "281a419a-ce5a-4402-bc18-6fa46e6c212f",
+  "currency": "MXN",
+  "products": [
+    {
+      "sku": "espresso-del-valle",
+      "name": "Espresso del Valle",
+      "description": "Doble ristretto insignia, crema dorada y final a cacao. 60 ml.",
+      "category": "Espresso",
+      "price": 45,
+      "image": "https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=0323ac94-9f07-47de-a598-593b2d98a83f",
+      "stock": 60
+    },
+    {
+      "sku": "capuchino-clasico",
+      "name": "Capuchino Clásico",
+      "description": "Espresso, leche vaporizada y espuma sedosa con cacao. 240 ml.",
+      "category": "Leche",
+      "price": 55,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Cappuccino_latte_art_2006-04-14.jpg",
+      "stock": 60
+    },
+    {
+      "sku": "latte-casa",
+      "name": "Latte de la Casa",
+      "description": "Suave y cremoso, ideal para acompañar pan dulce. 330 ml.",
+      "category": "Leche",
+      "price": 58,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Glass_of_Coffee_Latte_with_Pastry_%282%29.jpg/1920px-Glass_of_Coffee_Latte_with_Pastry_%282%29.jpg",
+      "stock": 60
+    },
+    {
+      "sku": "americano-valle",
+      "name": "Americano del Valle",
+      "description": "Espresso alargado en taza grande, limpio y aromático. 300 ml.",
+      "category": "Espresso",
+      "price": 50,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Espresso_cup.jpg/1920px-Espresso_cup.jpg",
+      "stock": 60
+    },
+    {
+      "sku": "grano-500g",
+      "name": "Café en Grano 500 g",
+      "description": "Grano selecto del valle, tueste medio para espresso y filtrados. Bolsa 500 g.",
+      "category": "Grano",
+      "price": 220,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Coffee_bag_2.jpg/1920px-Coffee_bag_2.jpg",
+      "stock": 30
+    }
+  ]
+}
+</script>
+
 <div data-itm-store data-project-id="281a419a-ce5a-4402-bc18-6fa46e6c212f">
   <div class="store-layout">
-    <section aria-label="Catálogo">
-      <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.12" data-eb-role="h2" data-eb-kind="text">Catálogo</h2>
-      <p class="muted" data-eb-editable="text" data-eb-key="tienda-index.p.13" data-eb-role="p" data-eb-kind="text">Precios e inventario se cargan en vivo desde Neon por el runtime ITM.</p>
+    <div>
+      <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.13" data-eb-role="h2" data-eb-kind="text">Catálogo</h2>
+      <p class="section-sub" data-eb-editable="text" data-eb-key="tienda-index.p.14" data-eb-role="p" data-eb-kind="text">Precios en MXN. El inventario se descuenta al confirmar tu pedido.</p>
       <div data-itm-product-list class="product-grid">
         <template data-itm-product-card>
           <article class="product-card">
-            <img data-itm-product-image src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=0323ac94-9f07-47de-a598-593b2d98a83f" alt="Producto Café Aroma Del Valle" loading="lazy" data-eb-editable="image" data-eb-key="tienda-index.img.14" data-eb-role="img" data-eb-kind="image">
-            <div class="product-card-body">
-              <span class="cat" data-itm-product-category>Categoría</span>
-              <h3 data-itm-product-name data-eb-editable="text" data-eb-key="tienda-index.h3.15" data-eb-role="h3" data-eb-kind="text">Nombre del producto</h3>
-              <p data-itm-product-description data-eb-editable="text" data-eb-key="tienda-index.p.16" data-eb-role="p" data-eb-kind="text">Descripción del producto.</p>
-              <span class="price" data-itm-product-price>$0.00</span>
-              <div class="card-actions">
-                <button type="button" data-itm-product-open data-eb-editable="link" data-eb-key="tienda-index.button.17" data-eb-role="button" data-eb-kind="link">Ver detalle</button>
-                <button type="button" data-itm-cart-add data-eb-editable="link" data-eb-key="tienda-index.button.18" data-eb-role="button" data-eb-kind="link">Agregar</button>
+            <img data-itm-product-image alt="Producto de Café Aroma Del Valle" data-eb-editable="image" data-eb-key="tienda-index.img.15" data-eb-role="img" data-eb-kind="image">
+            <div class="p-body">
+              <span class="p-cat" data-itm-product-category></span>
+              <h3 data-itm-product-name data-eb-editable="text" data-eb-key="tienda-index.h3.16" data-eb-role="h3" data-eb-kind="text"></h3>
+              <p data-itm-product-description data-eb-editable="text" data-eb-key="tienda-index.p.17" data-eb-role="p" data-eb-kind="text"></p>
+              <span class="price" data-itm-product-price></span>
+              <div class="p-actions">
+                <button type="button" data-itm-product-open data-eb-editable="link" data-eb-key="tienda-index.button.18" data-eb-role="button" data-eb-kind="link">Ver detalle</button>
+                <button type="button" data-itm-cart-add data-eb-editable="link" data-eb-key="tienda-index.button.19" data-eb-role="button" data-eb-kind="link">Agregar</button>
               </div>
             </div>
           </article>
         </template>
       </div>
 
-      <!-- Detalle de producto (hidratado por runtime ITM) -->
-      <div data-itm-product-detail class="product-detail" role="dialog" aria-modal="true" aria-label="Detalle de producto">
-        <div class="detail-inner">
-          <img data-itm-detail-image src="https://itm-void-excepcional.pages.dev/api/itm-project-assets?file=0323ac94-9f07-47de-a598-593b2d98a83f" alt="Detalle de producto" data-eb-editable="image" data-eb-key="tienda-index.img.19" data-eb-role="img" data-eb-kind="image">
-          <div class="detail-body">
-            <span class="cat" data-itm-detail-category>Categoría</span>
-            <h3 data-itm-detail-name data-eb-editable="text" data-eb-key="tienda-index.h3.20" data-eb-role="h3" data-eb-kind="text">Nombre del producto</h3>
-            <p data-itm-detail-description data-eb-editable="text" data-eb-key="tienda-index.p.21" data-eb-role="p" data-eb-kind="text">Descripción completa.</p>
-            <strong data-itm-detail-price>$0.00</strong>
-            <label class="qty-row">Cantidad:
-              <input type="number" min="1" value="1" data-itm-detail-quantity aria-label="Cantidad">
-            </label>
-            <div class="btn-row">
-              <button type="button" class="btn btn-dark btn-sm" data-itm-detail-add data-eb-editable="link" data-eb-key="tienda-index.button.22" data-eb-role="button" data-eb-kind="link">Agregar al carrito</button>
-              <button type="button" class="btn btn-outline-dark btn-sm" data-itm-detail-close data-eb-editable="link" data-eb-key="tienda-index.button.23" data-eb-role="button" data-eb-kind="link">Cerrar</button>
-            </div>
+      <div class="panel" style="margin-top:22px">
+        <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.20" data-eb-role="h2" data-eb-kind="text">Detalle del producto</h2>
+        <div data-itm-product-detail>
+          <img class="detail-img" data-itm-detail-image alt="Detalle de producto" data-eb-editable="image" data-eb-key="tienda-index.img.21" data-eb-role="img" data-eb-kind="image">
+          <p class="p-cat" data-itm-detail-category data-eb-editable="text" data-eb-key="tienda-index.p.22" data-eb-role="p" data-eb-kind="text"></p>
+          <h3 data-itm-detail-name data-eb-editable="text" data-eb-key="tienda-index.h3.23" data-eb-role="h3" data-eb-kind="text">Selecciona un producto para ver el detalle</h3>
+          <p data-itm-detail-description data-eb-editable="text" data-eb-key="tienda-index.p.24" data-eb-role="p" data-eb-kind="text">El detalle se hidrata automáticamente al elegir “Ver detalle”.</p>
+          <p class="price" data-itm-detail-price data-eb-editable="text" data-eb-key="tienda-index.p.25" data-eb-role="p" data-eb-kind="text"></p>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:Arial,sans-serif">
+            <label>Cantidad <input type="number" min="1" value="1" data-itm-detail-quantity style="width:80px;border:1px solid #e2d5bf;border-radius:10px;padding:.5rem"></label>
+            <button type="button" class="btn btn-small" data-itm-detail-add data-eb-editable="link" data-eb-key="tienda-index.button.26" data-eb-role="button" data-eb-kind="link">Agregar al carrito</button>
+            <button type="button" class="btn btn-small btn-ghost" data-itm-detail-close data-eb-editable="link" data-eb-key="tienda-index.button.27" data-eb-role="button" data-eb-kind="link">Cerrar</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <aside data-itm-cart class="cart-panel" aria-label="Carrito de compra">
-      <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.24" data-eb-role="h2" data-eb-kind="text">Tu carrito</h2>
-      <div data-itm-cart-items></div>
-      <template data-itm-cart-item>
-        <div class="cart-item">
-          <strong data-itm-cart-name>Producto</strong>
-          <span><span data-itm-cart-price>$0</span> × <span data-itm-cart-quantity>1</span> = <strong data-itm-cart-line-total>$0</strong></span>
-          <button type="button" data-itm-cart-remove data-eb-editable="link" data-eb-key="tienda-index.button.25" data-eb-role="button" data-eb-kind="link">Quitar</button>
+    <aside class="store-side">
+      <div class="panel">
+        <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.28" data-eb-role="h2" data-eb-kind="text">Tu carrito</h2>
+        <div data-itm-cart>
+          <div data-itm-cart-items></div>
+          <template data-itm-cart-item>
+            <div class="cart-item">
+              <strong data-itm-cart-name></strong>
+              <button type="button" data-itm-cart-remove aria-label="Quitar" data-eb-editable="link" data-eb-key="tienda-index.button.29" data-eb-role="button" data-eb-kind="link">✕</button>
+              <span><span data-itm-cart-price></span> × <span data-itm-cart-quantity></span></span>
+              <strong data-itm-cart-line-total></strong>
+            </div>
+          </template>
+          <p class="cart-total" data-eb-editable="text" data-eb-key="tienda-index.p.30" data-eb-role="p" data-eb-kind="text">Total: <span data-itm-cart-total>$0</span></p>
         </div>
-      </template>
-      <p class="cart-total" data-eb-editable="text" data-eb-key="tienda-index.p.26" data-eb-role="p" data-eb-kind="text"><span>Total</span><span data-itm-cart-total>$0.00</span></p>
+      </div>
 
-      <form data-itm-checkout class="checkout-form">
-        <label>Tu nombre
-          <input type="text" data-itm-customer-name placeholder="Ej. María Hernández" autocomplete="name" required>
-        </label>
-        <label>Código de pago 01
-          <input type="text" data-itm-payment-code inputmode="numeric" placeholder="Código 01" required>
-        </label>
-        <button type="submit" class="btn btn-gold" data-itm-pay data-eb-editable="link" data-eb-key="tienda-index.button.27" data-eb-role="button" data-eb-kind="link">Pagar con código 01</button>
-        <p data-itm-checkout-status class="checkout-status" role="status" aria-live="polite" data-eb-editable="text" data-eb-key="tienda-index.p.28" data-eb-role="p" data-eb-kind="text"></p>
-      </form>
-      <p class="muted" style="font-size:.85rem" data-eb-editable="text" data-eb-key="tienda-index.p.29" data-eb-role="p" data-eb-kind="text">Al pagar, el runtime valida tu código 01 y descuenta inventario en Neon. Recoge en barra en Xmejía, Campeche.</p>
+      <div class="panel">
+        <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.31" data-eb-role="h2" data-eb-kind="text">Confirmar pedido</h2>
+        <p class="section-sub" style="font-size:.9rem" data-eb-editable="text" data-eb-key="tienda-index.p.32" data-eb-role="p" data-eb-kind="text">Paga con código <strong>01</strong>. El pedido queda ligado a tu proyecto y descuenta inventario.</p>
+        <form data-itm-checkout>
+          <label>Nombre completo<input type="text" data-itm-customer-name required autocomplete="name" placeholder="Tu nombre"></label>
+          <label>Teléfono (opcional)<input type="tel" data-itm-customer-phone autocomplete="tel" placeholder="981 000 0000"></label>
+          <label>Nota (opcional)<textarea data-itm-customer-note rows="2" placeholder="Ej. Sin azúcar, para recoger a las 6 pm"></textarea></label>
+          <label>Código de pago<input type="text" data-itm-payment-code inputmode="numeric" placeholder="01" required></label>
+          <button type="submit" data-itm-pay data-eb-editable="link" data-eb-key="tienda-index.button.33" data-eb-role="button" data-eb-kind="link">Pagar con código 01</button>
+          <p data-itm-checkout-status role="status" data-eb-editable="text" data-eb-key="tienda-index.p.34" data-eb-role="p" data-eb-kind="text"></p>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2 data-eb-editable="text" data-eb-key="tienda-index.h2.35" data-eb-role="h2" data-eb-kind="text">Mis pedidos</h2>
+        <p class="section-sub" style="font-size:.9rem" data-eb-editable="text" data-eb-key="tienda-index.p.36" data-eb-role="p" data-eb-kind="text">Historial autenticado por proyecto. Inicia sesión si se te solicita.</p>
+        <div data-itm-orders>
+          <div data-itm-order-list></div>
+          <template data-itm-order-card>
+            <article class="order-card">
+              <p data-eb-editable="text" data-eb-key="tienda-index.p.37" data-eb-role="p" data-eb-kind="text"><strong>Pedido </strong><span data-itm-order-id></span> · <span data-itm-order-status></span></p>
+              <p data-eb-editable="text" data-eb-key="tienda-index.p.38" data-eb-role="p" data-eb-kind="text"><span data-itm-order-created></span> · Total <strong data-itm-order-total></strong></p>
+              <div data-itm-order-items></div>
+            </article>
+          </template>
+        </div>
+      </div>
     </aside>
   </div>
 </div>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <div><h3 data-eb-editable="text" data-eb-key="tienda-index.h3.30" data-eb-role="h3" data-eb-kind="text">Café Aroma Del Valle</h3><p data-eb-editable="text" data-eb-key="tienda-index.p.31" data-eb-role="p" data-eb-kind="text">Lun–Vie 7–21 · Sáb 8–22 · Dom 9–15<br>24615 Xmejía, Campeche</p></div>
-    <div><h4 data-eb-editable="text" data-eb-key="tienda-index.h4.32" data-eb-role="h4" data-eb-kind="text">Ayuda</h4><p data-eb-editable="text" data-eb-key="tienda-index.p.33" data-eb-role="p" data-eb-kind="text"><a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.34" data-eb-role="a" data-eb-kind="link">981 133 2914</a> solo informes.<br>Los pedidos se hacen aquí en la tienda.</p></div>
-    <div><h4 data-eb-editable="text" data-eb-key="tienda-index.h4.35" data-eb-role="h4" data-eb-kind="text">Presentación</h4><p data-eb-editable="text" data-eb-key="tienda-index.p.36" data-eb-role="p" data-eb-kind="text"><a href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.37" data-eb-role="a" data-eb-kind="link">Volver al inicio</a><br><a href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.38" data-eb-role="a" data-eb-kind="link">Dejar una reseña</a></p></div>
+  <div class="wrap footer-grid">
+    <div><strong>Café Aroma Del Valle</strong><p data-eb-editable="text" data-eb-key="tienda-index.p.39" data-eb-role="p" data-eb-kind="text">Tienda en línea · Campeche<br>Lun–Vie 7:00–21:00 · Sáb 8:00–22:00 · Dom 9:00–15:00</p></div>
+    <div><p data-eb-editable="text" data-eb-key="tienda-index.p.40" data-eb-role="p" data-eb-kind="text"><strong>Contacto</strong></p><p data-eb-editable="text" data-eb-key="tienda-index.p.41" data-eb-role="p" data-eb-kind="text"><a href="tel:+529811332914" data-eb-editable="link" data-eb-key="tienda-index.a.42" data-eb-role="a" data-eb-kind="link">981 133 2914</a></p></div>
+    <div><p data-eb-editable="text" data-eb-key="tienda-index.p.43" data-eb-role="p" data-eb-kind="text"><strong>Explora</strong></p><p data-eb-editable="text" data-eb-key="tienda-index.p.44" data-eb-role="p" data-eb-kind="text"><a href="../index.html" data-eb-editable="link" data-eb-key="tienda-index.a.45" data-eb-role="a" data-eb-kind="link">Inicio</a><br><a href="../index.html#opiniones" data-eb-editable="link" data-eb-key="tienda-index.a.46" data-eb-role="a" data-eb-kind="link">Opiniones</a></p></div>
   </div>
-  <p class="footer-legal" data-eb-editable="text" data-eb-key="tienda-index.p.39" data-eb-role="p" data-eb-kind="text">© <span id="year">2026</span> Café Aroma Del Valle · Tienda ITM con código 01</p>
+  <p class="foot-note" data-eb-editable="text" data-eb-key="tienda-index.p.47" data-eb-role="p" data-eb-kind="text">© <span id="year">2026</span> Café Aroma Del Valle · Compra con código 01. Sin dashboard administrativo público.</p>
 </footer>
-
 <script src="../script.js" defer></script>
 
 <section id="perfil-usuario" aria-label="Perfil del visitante">
