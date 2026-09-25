@@ -1,17 +1,17 @@
 // Café Aroma Del Valle — interacciones de presentación únicamente.
-// No implementa carrito, comentarios ni tienda propia: esos los hidrata el runtime ITM.
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var nav = document.getElementById('mainNav');
-  if(toggle && nav){
-    toggle.addEventListener('click', function(){
-      var open = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+// No contiene lógica de comentarios, tienda, carrito, checkout ni pedidos:
+// comments.js y el runtime ITM hidratan esos componentes.
+(function () {
+  var menuBtn = document.getElementById('menuBtn');
+  var navLinks = document.getElementById('navLinks');
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', function () {
+      navLinks.classList.toggle('open');
     });
-    nav.addEventListener('click', function(e){
-      if(e.target.tagName === 'A') nav.classList.remove('open');
+    navLinks.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') navLinks.classList.remove('open');
     });
   }
-  var y = document.getElementById('year');
-  if(y) y.textContent = String(new Date().getFullYear());
+  var year = document.getElementById('year');
+  if (year) year.textContent = String(new Date().getFullYear());
 })();
